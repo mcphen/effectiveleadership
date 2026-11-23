@@ -13,6 +13,10 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        // Le site est servi derrière le pare-feu Sucuri (GoDaddy Website Security) :
+        // on lit la vraie IP du visiteur et le protocole dans les en-têtes X-Forwarded-*.
+        $middleware->trustProxies(at: env('TRUSTED_PROXIES', '*'));
+
         $middleware->web(append: [
             HandleInertiaRequests::class,
             AddLinkHeadersForPreloadedAssets::class,
