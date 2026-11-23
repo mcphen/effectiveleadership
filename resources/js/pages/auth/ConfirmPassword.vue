@@ -21,13 +21,13 @@ const submit = () => {
 </script>
 
 <template>
-    <AuthLayout title="Confirm your password" description="This is a secure area of the application. Please confirm your password before continuing.">
-        <Head title="Confirm password" />
+    <AuthLayout title="Confirmez votre mot de passe" description="Cette zone est protégée. Merci de confirmer votre mot de passe pour continuer.">
+        <Head title="Confirmation du mot de passe" />
 
         <form @submit.prevent="submit">
             <div class="space-y-6">
                 <div class="grid gap-2">
-                    <Label htmlFor="password">Password</Label>
+                    <Label htmlFor="password">Mot de passe</Label>
                     <Input
                         id="password"
                         type="password"

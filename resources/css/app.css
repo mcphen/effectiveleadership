@@ -89,3 +89,40 @@ html {
         @apply bg-background text-foreground;
     }
 }
+
+/* Éditeur de texte riche de l'admin */
+@layer components {
+    .prose-admin {
+        @apply text-sm leading-relaxed;
+    }
+    .prose-admin > * + * {
+        @apply mt-3;
+    }
+    .prose-admin h2 {
+        @apply text-xl font-semibold;
+    }
+    .prose-admin h3 {
+        @apply text-lg font-semibold;
+    }
+    .prose-admin h4 {
+        @apply font-semibold;
+    }
+    .prose-admin ul {
+        @apply list-disc pl-6;
+    }
+    .prose-admin ol {
+        @apply list-decimal pl-6;
+    }
+    .prose-admin li + li {
+        @apply mt-1;
+    }
+    .prose-admin a {
+        @apply text-primary underline underline-offset-2;
+    }
+    .prose-admin blockquote {
+        @apply border-l-4 border-primary/40 pl-4 italic text-muted-foreground;
+    }
+    .prose-admin hr {
+        @apply my-4 border-border;
+    }
+}

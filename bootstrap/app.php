@@ -17,6 +17,15 @@ return Application::configure(basePath: dirname(__DIR__))
             HandleInertiaRequests::class,
             AddLinkHeadersForPreloadedAssets::class,
         ]);
+
+        $middleware->alias([
+            'active' => \App\Http\Middleware\EnsureActiveUser::class,
+            'admin' => \App\Http\Middleware\EnsureAdmin::class,
+            'locale' => \App\Http\Middleware\SetLocale::class,
+        ]);
+
+        $middleware->redirectGuestsTo(fn () => route('login'));
+        $middleware->redirectUsersTo(fn () => route('admin.dashboard'));
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
