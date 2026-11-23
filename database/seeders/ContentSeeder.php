@@ -76,7 +76,7 @@ class ContentSeeder extends Seeder
             'address' => $contact['address'],
             'email' => $contact['email'],
             'phones' => collect($contact['phones'])->map(fn ($n) => ['_id' => Str::random(8), 'number' => $n])->all(),
-            'hours' => $this->t('Du lundi au vendredi, 9h – 18h', 'Monday to Friday, 9 am – 6 pm'),
+            'hours' => $this->t('', ''), // non communiqués par le client
             'map_query' => 'Liberté 6 Extension, Dakar, Sénégal',
             'notify_email' => null,
         ]);
