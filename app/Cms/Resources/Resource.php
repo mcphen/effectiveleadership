@@ -110,11 +110,12 @@ abstract class Resource
         foreach (static::fields() as $field) {
             $name = $field['name'];
 
-            if (! array_key_exists($name, $data) || ! empty($field['readonly'])) {
+            // Le slug est toujours calculé (généré depuis le titre s'il n'est pas fourni).
+            if ((! array_key_exists($name, $data) && $field['type'] !== 'slug') || ! empty($field['readonly'])) {
                 continue;
             }
 
-            $value = Fields::sanitize($field, $data[$name]);
+            $value = Fields::sanitize($field, $data[$name] ?? ($field['type'] === 'slug' && $model->exists ? $model->getTranslations($name) : []));
 
             if ($field['type'] === 'slug') {
                 $value = static::uniqueSlugs($model, $value, $data[$field['from'] ?? static::$titleField] ?? []);
@@ -197,7 +198,7 @@ abstract class Resource
         }
 
         // Indique les traductions anglaises manquantes.
-        if (method_exists($model, 'getTranslations')) {
+        if (method_exists($model, 'isTranslatableAttribute') && $model->isTranslatableAttribute(static::$titleField)) {
             $row['_missing_en'] = blank($model->getTranslations(static::$titleField)['en'] ?? null);
         }
 

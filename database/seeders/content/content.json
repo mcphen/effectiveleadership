@@ -1,0 +1,584 @@
+{
+  "home": {
+    "tagline": {"fr": "Développer des leaders. Transformer les organisations. Créer de l'impact.", "en": "Developing Leaders. Transforming Organizations. Creating Impact."},
+    "intro": {"fr": "Nous accompagnons les dirigeants, les équipes et les organisations à travers l'Afrique pour renforcer les capacités de leadership, améliorer l'efficacité organisationnelle et produire un impact durable.", "en": "We partner with leaders, teams and organizations across Africa to strengthen leadership capacity, improve organizational effectiveness and deliver sustainable impact."},
+    "showcases": [
+      {
+        "title": {"fr": "Développer des leaders", "en": "Developing Leaders"},
+        "text": {"fr": "Coaching exécutif, développement du leadership et programmes d'accélération des talents conçus pour aider les leaders à gagner en assurance, en influence et en efficacité.", "en": "Executive coaching, leadership development and talent acceleration programs designed to help leaders grow in confidence, influence and effectiveness."},
+        "cta": {"fr": "Découvrir nos solutions leadership →", "en": "Explore Leadership Solutions →"}
+      },
+      {
+        "title": {"fr": "Transformer les organisations", "en": "Transforming Organizations"},
+        "text": {"fr": "Diagnostics organisationnels, exécution de la stratégie, conduite du changement et solutions d'amélioration de la performance qui renforcent l'efficacité institutionnelle.", "en": "Organizational diagnostics, strategy execution, change management and performance improvement solutions that strengthen institutional effectiveness."},
+        "cta": {"fr": "Découvrir nos services de conseil →", "en": "Discover Our Consulting Services →"}
+      },
+      {
+        "title": {"fr": "Créer de l'impact", "en": "Creating Impact"},
+        "text": {"fr": "Aider les organisations à traduire leur stratégie en résultats mesurables grâce aux personnes, aux systèmes, à la gouvernance et à des pratiques de leadership durables.", "en": "Helping organizations translate strategy into measurable results through people, systems, governance and sustainable leadership practices."},
+        "cta": {"fr": "Voir nos histoires d'impact client →", "en": "View Client Impact Stories →"}
+      }
+    ]
+  },
+
+  "about": {
+    "title": {"fr": "Qui sommes-nous", "en": "Who We Are"},
+    "sections": [
+      {
+        "heading": {"fr": "Qui sommes-nous", "en": "Who We Are"},
+        "html": {
+          "fr": "<p><strong>Un Cabinet de Conseil en Leadership et Management au service du développement de leaders et d’organisations efficaces en Afrique.</strong></p><p>En effet, nous croyons que les transformations dont l’Afrique a besoin pour son émergence ne se feront pas sans des acteurs dotés seulement de compétences techniques dans leurs domaines respectifs.</p><p>Ces acteurs doivent également disposer de fortes capacités de leadership indispensables à la conduite des changements nécessaires dans les organisations des secteurs public et privé.</p>",
+          "en": "<p><strong>A Leadership and Management Consulting Firm dedicated to developing effective leaders and organizations in Africa.</strong></p><p>We believe that the transformations Africa needs for its emergence will not happen with actors who possess only technical skills in their respective fields.</p><p>These actors must also have strong leadership capabilities, which are essential to driving the changes required in public and private sector organizations.</p>"
+        }
+      },
+      {
+        "heading": {"fr": "Notre vision", "en": "Our Vision"},
+        "html": {
+          "fr": "<p>Des organisations où il fait bon travailler et performantes, grâce à un leadership efficace !</p>",
+          "en": "<p>High-performing organizations where it is good to work, thanks to effective leadership!</p>"
+        }
+      },
+      {
+        "heading": {"fr": "Notre mission", "en": "Our Mission"},
+        "html": {
+          "fr": "<p>Nous accompagnons des cadres et les aidons à cultiver et à développer des compétences en leadership ; à construire et à développer des organisations où leurs membres sont heureux de travailler et de donner le meilleur d’eux-mêmes pour de meilleurs résultats et des vies meilleures.</p>",
+          "en": "<p>We support executives and help them cultivate and develop leadership skills, and build and grow organizations where their members are happy to work and give their best for better results and better lives.</p>"
+        }
+      },
+      {
+        "heading": {"fr": "Notre équipe", "en": "Our Team"},
+        "html": {
+          "fr": "<p><strong>Adrien NDIAYE, BA, MAS, PGD, MS</strong><br>Founder &amp; Managing Partner</p><ul><li><strong>Fonction chez ELC :</strong> Senior Performance Consultant, Master Trainer, Executive Coach.</li><li><strong>Enseignement :</strong> Professor of Business Strategy and Ethics, Entrepreneurship and Innovation, Leadership, and Human Capital Management, à SupdeCo Global Business School (Dakar, Sénégal) et à l’UCAO (Dakar, Sénégal).</li></ul><p><strong>Formation (Alma Mater) :</strong></p><ul><li>New York University, USA</li><li>EM Lyon, France</li><li>ESDES Business School, Lyon, France</li><li>Université Lumière Lyon, France</li></ul><p><strong>Madeleine Samané MARONE</strong><br>Assistante / Consultante Junior</p><ul><li><strong>Fonction chez ELC :</strong> Office Manager / Junior Consultant</li><li><strong>Formations :</strong> Master en sociologie, UCAD. Master en Gestion des Ressources Humaines à l’UCAO</li></ul>",
+          "en": "<p><strong>Adrien NDIAYE, BA, MAS, PGD, MS</strong><br>Founder &amp; Managing Partner</p><ul><li><strong>Role at ELC:</strong> Senior Performance Consultant, Master Trainer, Executive Coach.</li><li><strong>Teaching:</strong> Professor of Business Strategy and Ethics, Entrepreneurship and Innovation, Leadership, and Human Capital Management at SupdeCo Global Business School (Dakar, Senegal) and at UCAO (Dakar, Senegal).</li></ul><p><strong>Education (Alma Mater):</strong></p><ul><li>New York University, USA</li><li>EM Lyon, France</li><li>ESDES Business School, Lyon, France</li><li>Université Lumière Lyon, France</li></ul><p><strong>Madeleine Samané MARONE</strong><br>Assistant / Junior Consultant</p><ul><li><strong>Role at ELC:</strong> Office Manager / Junior Consultant</li><li><strong>Education:</strong> Master’s in Sociology, UCAD. Master’s in Human Resource Management, UCAO</li></ul>"
+        }
+      },
+      {
+        "heading": {"fr": "Consultants / Prestataires", "en": "Consultants / Associates"},
+        "html": {
+          "fr": "<p>Ils ont au moins 10 ans d’expérience dans divers secteurs et sont spécialisés en :</p><ul><li>Stratégie</li><li>Management</li><li>Capital Humain</li><li>Sciences Humaines et Sociales</li><li>Communication</li><li>Marketing</li><li>Finance</li><li>Droit</li><li>IT – Technologies de l’Information</li></ul>",
+          "en": "<p>They have at least 10 years of experience across various sectors and specialize in:</p><ul><li>Strategy</li><li>Management</li><li>Human Capital</li><li>Human and Social Sciences</li><li>Communication</li><li>Marketing</li><li>Finance</li><li>Law</li><li>IT – Information Technology</li></ul>"
+        }
+      },
+      {
+        "heading": {"fr": "Nos réalisations", "en": "Our Achievements"},
+        "html": {
+          "fr": "<p><strong>Exemples de projets réalisés</strong></p><ul><li>Audits organisationnels et accompagnement du changement, dans le public et le privé</li><li>Formulation de stratégies de croissance pour des PME</li><li>Design et mise en œuvre de programmes de leadership pour des entreprises multinationales</li><li>Accompagnement de projets de succession : leadership de transition pour de grandes organisations</li><li>Programmes de formation et de coaching en leadership pour cadres et dirigeants</li></ul>",
+          "en": "<p><strong>Examples of completed projects</strong></p><ul><li>Organizational audits and change management support, in the public and private sectors</li><li>Growth strategy formulation for SMEs</li><li>Design and implementation of leadership programs for multinational companies</li><li>Support for succession projects: transition leadership for large organizations</li><li>Leadership training and coaching programs for executives and senior leaders</li></ul>"
+        }
+      }
+    ],
+    "values": [
+      {"title": {"fr": "Intégrité", "en": "Integrity"}, "text": null},
+      {"title": {"fr": "Humilité", "en": "Humility"}, "text": null},
+      {"title": {"fr": "Empathie", "en": "Empathy"}, "text": null},
+      {"title": {"fr": "Diversité", "en": "Diversity"}, "text": null},
+      {"title": {"fr": "Collaboration", "en": "Collaboration"}, "text": null},
+      {"title": {"fr": "Excellence", "en": "Excellence"}, "text": null}
+    ],
+    "stats": [
+      {"value": "60+", "label": {"fr": "Organisations accompagnées", "en": "Organizations supported"}},
+      {"value": "250+", "label": {"fr": "Formations livrées", "en": "Training sessions delivered"}},
+      {"value": "4500+", "label": {"fr": "Participants aux formations", "en": "Training participants"}},
+      {"value": "300+", "label": {"fr": "Personnes accompagnées", "en": "Individuals supported"}},
+      {"value": "2000+", "label": {"fr": "Sessions de coaching", "en": "Coaching sessions"}}
+    ],
+    "facts_from_presentation": [
+      {"fr": "Effective Leadership Consulting est une filiale de StrategizEffect LLC, cabinet créé en 2012 à New York City par un groupe d’alumni de New York University.", "en": "Effective Leadership Consulting is a subsidiary of StrategizEffect LLC, a firm founded in 2012 in New York City by a group of New York University alumni."},
+      {"fr": "Signature de la présentation : « Transforming Leaders. Growing Businesses. Strengthening Organizations. »", "en": "Presentation tagline: “Transforming Leaders. Growing Businesses. Strengthening Organizations.”"},
+      {"fr": "Adrien NDIAYE – Founder & Managing Director ; Performance Consultant, Formateur et Executive Coach @ Effective Leadership Consulting, Dakar, Sénégal ; Founder & Managing Partner @ StrategizEffect LLC, New York, USA.", "en": "Adrien NDIAYE – Founder & Managing Director; Performance Consultant, Trainer and Executive Coach @ Effective Leadership Consulting, Dakar, Senegal; Founder & Managing Partner @ StrategizEffect LLC, New York, USA."},
+      {"fr": "Adrien NDIAYE : 15 [ans] dans les secteurs de l’Éducation, de la Banque et du Conseil en Management.", "en": "Adrien NDIAYE: 15 [years] in the Education, Banking and Management Consulting sectors."},
+      {"fr": "Adrien NDIAYE – diplômes : Master of Science in Organizational Effectiveness (Leadership, Executive Coaching, Change Management), Executive Program in Entrepreneurship/Start-Up Program, New York University, Class of 2012 ; Graduate Certificate in Money, Finance, and International Economics, EM Lyon Business School, Class of 2005 ; Post-Graduate Degree in Management & International Business, ESDES Business School, Lyon, Class of 2000 ; Master (DESS) in Applied Sociology / Social & Organizational Psychology, Université Lumière Lyon II, Class of 1998.", "en": "Adrien NDIAYE – degrees: Master of Science in Organizational Effectiveness (Leadership, Executive Coaching, Change Management), Executive Program in Entrepreneurship/Start-Up Program, New York University, Class of 2012; Graduate Certificate in Money, Finance, and International Economics, EM Lyon Business School, Class of 2005; Post-Graduate Degree in Management & International Business, ESDES Business School, Lyon, Class of 2000; Master (DESS) in Applied Sociology / Social & Organizational Psychology, Université Lumière Lyon II, Class of 1998."},
+      {"fr": "Madeleine Samané MARONE – Office Manager, Consultante Junior ; sociologue, conduit des activités de recherche depuis 2019 ; Master en Sociologie, UCAD (2025) ; Master en Gestion des Ressources Humaines, UCAO (2026).", "en": "Madeleine Samané MARONE – Office Manager, Junior Consultant; sociologist, conducting research activities since 2019; Master’s in Sociology, UCAD (2025); Master’s in Human Resource Management, UCAO (2026)."},
+      {"fr": "Organisation de l’équipe : Adrien NDIAYE (Managing Director / Consultant Principal), une Office Manager / Junior Consultant et un réseau de consultants prestataires.", "en": "Team structure: Adrien NDIAYE (Managing Director / Principal Consultant), an Office Manager / Junior Consultant and a network of associate consultants."},
+      {"fr": "Réseau de consultants prestataires (au moins 10 ans d’expérience) : stratégie et développement organisationnel ; leadership et management ; gestion du capital humain et ressources humaines ; sciences humaines et sociales ; communication et marketing ; finance ; droit ; informatique et technologies de l’information (IT).", "en": "Network of associate consultants (at least 10 years of experience): strategy and organizational development; leadership and management; human capital and human resources management; human and social sciences; communication and marketing; finance; law; information technology (IT)."},
+      {"fr": "Principaux domaines d’intervention : Leadership – Conseil et Développement ; Management des Talents ; Entrepreneuriat et Innovation ; Management Stratégique ; Change Management ; Efficacité Organisationnelle ; Équipes Hautement Performantes.", "en": "Main areas of intervention: Leadership – Advisory and Development; Talent Management; Entrepreneurship and Innovation; Strategic Management; Change Management; Organizational Effectiveness; High-Performing Teams."},
+      {"fr": "Nos services s’adressent à des individus, équipes et organisations : Business Diagnosis ; Formulation et Alignement Stratégique ; Audit Organisationnel ; Design d’Organisations, Réorganisation ; Évaluation du Leadership (360, MBTI, DISC, EI…) ; Facilitation du Changement ; Programmes de Développement du Leadership ; Établissement de Modèles de Leadership ; Optimisation des Talents, Équipes et Organisations ; Séminaires et Sessions de Formation ; Programmes d’Executive Coaching ; Rétention de Talents et Management de la Succession.", "en": "Our services are aimed at individuals, teams and organizations: Business Diagnosis; Strategy Formulation and Alignment; Organizational Audit; Organization Design and Restructuring; Leadership Assessment (360, MBTI, DISC, EI…); Change Facilitation; Leadership Development Programs; Leadership Model Design; Talent, Team and Organization Optimization; Seminars and Training Sessions; Executive Coaching Programs; Talent Retention and Succession Management."},
+      {"fr": "Profils de nos clients – Organisations : Gouvernements ; Multinationales ; Grandes Entreprises ; PME ; Organisations Internationales ; Agences de Développement International ; Institutions Académiques ; Fondations ; ONG et Associations ; Communautés Religieuses ; Autres.", "en": "Client profiles – Organizations: Governments; Multinationals; Large Companies; SMEs; International Organizations; International Development Agencies; Academic Institutions; Foundations; NGOs and Associations; Religious Communities; Others."},
+      {"fr": "Profils de nos clients – Individus : CEOs/Dirigeants/Entrepreneurs ; Directeurs Seniors ; Directeurs ; Chiefs of Party ; Chefs de Projet ; Chefs de Département ; Cadres Moyens ; Managers ; Employés et Débutants ; Responsables de Communautés ; Étudiants ; Autres.", "en": "Client profiles – Individuals: CEOs/Senior Leaders/Entrepreneurs; Senior Directors; Directors; Chiefs of Party; Project Managers; Heads of Department; Middle Managers; Managers; Employees and Entry-Level Staff; Community Leaders; Students; Others."},
+      {"fr": "La présentation précise que les programmes de formation et de coaching en leadership s’adressent aux cadres, entrepreneurs et dirigeants.", "en": "The presentation specifies that the leadership training and coaching programs are aimed at executives, entrepreneurs and senior leaders."}
+    ]
+  },
+
+  "case_studies_intro": {"fr": "Exemples de projets réalisés : audits organisationnels et accompagnement du changement, dans le public et le privé ; formulation de stratégies de croissance pour des PME ; design et mise en œuvre de programmes de leadership pour des entreprises multinationales ; accompagnement de projets de succession (leadership de transition pour de grandes organisations) ; programmes de formation et de coaching en leadership pour cadres et dirigeants.", "en": "Examples of completed projects: organizational audits and change management support, in the public and private sectors; growth strategy formulation for SMEs; design and implementation of leadership programs for multinational companies; support for succession projects (transition leadership for large organizations); leadership training and coaching programs for executives and senior leaders."},
+  "case_studies": [],
+
+  "references": [
+    {"name": "BEM Management School Bordeaux – Dakar", "sector": {"fr": "Enseignement supérieur", "en": "Higher education"}, "logo": "references/bem-dakar.jpg"},
+    {"name": "Auchan", "sector": {"fr": "Grande distribution", "en": "Retail"}, "logo": "references/auchan.png"},
+    {"name": "Cours Sainte Marie de Hann", "sector": {"fr": "Éducation", "en": "Education"}, "logo": "references/cours-sainte-marie-de-hann.jpg"},
+    {"name": "MTN", "sector": {"fr": "Télécommunications", "en": "Telecommunications"}, "logo": "references/mtn.jpg"},
+    {"name": "Groupe Sup de Co Dakar", "sector": {"fr": "Enseignement supérieur", "en": "Higher education"}, "logo": "references/sup-de-co-dakar.jpg"},
+    {"name": "UCAO – Université Catholique de l'Afrique de l'Ouest", "sector": {"fr": "Enseignement supérieur", "en": "Higher education"}, "logo": "references/ucao.jpg"},
+    {"name": "Thelma Luxury Management (by BEM)", "sector": {"fr": "Enseignement supérieur", "en": "Higher education"}, "logo": "references/thelma-luxury-management.jpg"},
+    {"name": "European Commission", "sector": {"fr": "Organisation internationale", "en": "International organization"}, "logo": "references/european-commission.jpg"},
+    {"name": "BDEAC – Banque de Développement des États de l'Afrique Centrale", "sector": {"fr": "Banque de développement", "en": "Development bank"}, "logo": "references/bdeac.jpg"},
+    {"name": "Gouvernement du Sénégal", "sector": {"fr": "Secteur public", "en": "Public sector"}, "logo": "references/gouvernement-senegal.jpg"},
+    {"name": "ODEC – Office Diocésain de l'Enseignement Catholique, Diocèse de Dakar", "sector": {"fr": "Éducation", "en": "Education"}, "logo": "references/odec-dakar.jpg"},
+    {"name": "Novo Nordisk", "sector": {"fr": "Pharmaceutique", "en": "Pharmaceuticals"}, "logo": "references/novo-nordisk.jpg"},
+    {"name": "La Sénégalaise de l'Automobile", "sector": {"fr": "Automobile", "en": "Automotive"}, "logo": "references/senegalaise-de-l-automobile.jpg"},
+    {"name": "OSIWA – Open Society Initiative for West Africa", "sector": {"fr": "Fondation", "en": "Foundation"}, "logo": "references/osiwa.png"},
+    {"name": "CMU – Couverture Maladie Universelle", "sector": {"fr": "Secteur public / Santé", "en": "Public sector / Health"}, "logo": "references/cmu-senegal.jpg"},
+    {"name": "Chambre de Commerce de Djibouti", "sector": {"fr": "Institution consulaire", "en": "Chamber of commerce"}, "logo": "references/chambre-de-commerce-djibouti.jpg"},
+    {"name": "Deloitte", "sector": {"fr": "Conseil et audit", "en": "Consulting and audit"}, "logo": "references/deloitte.png"},
+    {"name": "JICA", "sector": {"fr": "Coopération internationale", "en": "International development"}, "logo": "references/jica.png"},
+    {"name": "Enabel", "sector": {"fr": "Coopération internationale", "en": "International development"}, "logo": "references/enabel.png"},
+    {"name": "Majorel", "sector": {"fr": "Centres de relation client", "en": "Customer experience / BPO"}, "logo": "references/majorel.png"},
+    {"name": "Free Sénégal", "sector": {"fr": "Télécommunications", "en": "Telecommunications"}, "logo": "references/free-senegal.jpg"},
+    {"name": "The World Bank", "sector": {"fr": "Organisation internationale", "en": "International organization"}, "logo": "references/world-bank.jpg"},
+    {"name": "ISJA – Institution Sainte-Jeanne d'Arc", "sector": {"fr": "Éducation", "en": "Education"}, "logo": "references/isja.jpg"},
+    {"name": "WIC – Women's Investment Club Senegal", "sector": {"fr": "Association / Investissement", "en": "Association / Investment"}, "logo": "references/wic-senegal.jpg"},
+    {"name": "CBAO Groupe Attijariwafa bank", "sector": {"fr": "Banque", "en": "Banking"}, "logo": "references/cbao.png"},
+    {"name": "Oragroup", "sector": {"fr": "Banque", "en": "Banking"}, "logo": "references/oragroup.jpg"},
+    {"name": "Wave", "sector": {"fr": "Services financiers mobiles", "en": "Mobile financial services"}, "logo": "references/wave.png"},
+    {"name": "Orange Sonatel", "sector": {"fr": "Télécommunications", "en": "Telecommunications"}, "logo": "references/orange-sonatel.png"},
+    {"name": "CMA CGM", "sector": {"fr": "Transport maritime et logistique", "en": "Shipping and logistics"}, "logo": "references/cma-cgm.png"},
+    {"name": "Crédit Mutuel du Sénégal", "sector": {"fr": "Banque / Microfinance", "en": "Banking / Microfinance"}, "logo": "references/credit-mutuel-du-senegal.jpg"},
+    {"name": "USAID", "sector": {"fr": "Coopération internationale", "en": "International development"}, "logo": "references/usaid.png"},
+    {"name": "Tropicasem", "sector": {"fr": "Agro-industrie (semences)", "en": "Agribusiness (seeds)"}, "logo": "references/tropicasem.png"},
+    {"name": "Sénégal Numérique SA", "sector": {"fr": "Secteur public / Numérique", "en": "Public sector / Digital"}, "logo": "references/senegal-numerique.png"},
+    {"name": "TDS SA – Télédiffusion du Sénégal", "sector": {"fr": "Audiovisuel / Télédiffusion", "en": "Broadcasting"}, "logo": "references/tds-sa.png"},
+    {"name": "Promobile", "sector": {"fr": "Télécommunications / Distribution", "en": "Telecommunications / Distribution"}, "logo": "references/promobile.png"}
+  ],
+
+  "testimonials": [],
+
+  "poles": [
+    {
+      "key": "advisory",
+      "title": {"fr": "ELC Advisory", "en": "ELC Advisory"},
+      "summary": {"fr": "Diagnostics, retraite leadership, conduite du changement et stratégies de croissance pour les dirigeants et les organisations.", "en": "Diagnostics, leadership retreats, change management and growth strategies for leaders and organizations."},
+      "categories": [
+        {
+          "key": "diagnostics",
+          "title": {"fr": "Diagnostics", "en": "Diagnostics"},
+          "summary": {"fr": "Diagnostic organisationnel et évaluation du leadership des dirigeants.", "en": "Organizational diagnostics and executive leadership assessment."},
+          "offers": [
+            {
+              "source_file": "SITE WEB ELC/3 ELC ADVISORY/Diagnostics/Axiome by ELCTM– Diagnostic organisationnelTM/3 - AXIOME.docx",
+              "title": {"fr": "AXIOME™ by ELC", "en": "AXIOME™ by ELC"},
+              "subtitle": {"fr": "Diagnostic Organisationnel & Transformation Durable", "en": "Organizational Diagnostics & Sustainable Transformation"},
+              "signature": {"fr": "Révéler. Aligner. Transformer.", "en": "Reveal. Align. Transform."},
+              "summary": {"fr": "Une approche structurée et multidisciplinaire de diagnostic organisationnel permettant d’identifier les leviers de transformation et d’engager des changements durables.", "en": "A structured, multidisciplinary approach to organizational diagnostics that identifies the levers of transformation and drives lasting change."},
+              "sections": [
+                {"heading": null, "html": {
+                  "fr": "<p>Dans un environnement marqué par des exigences croissantes de performance, de gouvernance et d’impact, les organisations doivent disposer d’une lecture claire de leur fonctionnement réel afin de prendre des décisions stratégiques éclairées.</p><p>Effective Leadership Consulting (ELC) propose, à travers son offre signature AXIOME™, une approche structurée et multidisciplinaire permettant d’identifier les leviers de transformation et d’engager des changements durables.</p>",
+                  "en": "<p>In an environment marked by growing demands for performance, governance and impact, organizations need a clear reading of how they really operate in order to make informed strategic decisions.</p><p>Through its signature offer AXIOME™, Effective Leadership Consulting (ELC) provides a structured, multidisciplinary approach to identify the levers of transformation and drive lasting change.</p>"}},
+                {"heading": {"fr": "Trois dimensions complémentaires", "en": "Three complementary dimensions"}, "html": {
+                  "fr": "<p>AXIOME™ est une approche intégrée de diagnostic organisationnel fondée sur trois dimensions complémentaires :</p><ul><li>Compréhension des dynamiques humaines et des réalités invisibles ;</li><li>Analyse de la cohérence organisationnelle et de l’alignement stratégique ;</li><li>Construction d’une transformation concrète.</li></ul>",
+                  "en": "<p>AXIOME™ is an integrated approach to organizational diagnostics built on three complementary dimensions:</p><ul><li>Understanding human dynamics and invisible realities;</li><li>Analyzing organizational coherence and strategic alignment;</li><li>Building concrete transformation.</li></ul>"}}
+              ],
+              "steps": [],
+              "benefits": []
+            },
+            {
+              "source_file": "SITE WEB ELC/3 ELC ADVISORY/Diagnostics/Executive AssessmentTM/4 - Executive Leadership Assessment.docx",
+              "title": {"fr": "Executive Leadership Assessment™", "en": "Executive Leadership Assessment™"},
+              "subtitle": null,
+              "signature": {"fr": "Se connaître. Élever son leadership. Amplifier son impact.", "en": "Know Yourself. Elevate Your Leadership. Amplify Your Impact."},
+              "summary": {"fr": "Une évaluation intégrant feedback 360°, leadership, intelligence émotionnelle et préférences comportementales pour révéler les forces, les angles morts et le potentiel de développement des dirigeants.", "en": "An assessment combining 360° feedback, leadership evaluation, emotional intelligence and behavioral preferences to reveal leaders’ strengths, blind spots and development potential."},
+              "sections": [
+                {"heading": null, "html": {
+                  "fr": "<p>Grâce à une approche intégrant le feedback 360°, l’évaluation du leadership, l’intelligence émotionnelle et les préférences comportementales, notre Executive Leadership Assessment offre aux dirigeants une compréhension approfondie de leurs forces, de leurs angles morts et de leur potentiel de développement.</p><p>Cette démarche fournit des insights précieux, des recommandations ciblées et un plan de développement personnalisé pour accélérer la performance individuelle et organisationnelle.</p><p>À l’issue du processus, vous recevez un rapport personnalisé et une feuille de route concrète pour renforcer votre efficacité, votre influence et votre impact organisationnel.</p>",
+                  "en": "<p>Through an approach that integrates 360° feedback, leadership assessment, emotional intelligence and behavioral preferences, our Executive Leadership Assessment gives leaders an in-depth understanding of their strengths, blind spots and development potential.</p><p>The process delivers valuable insights, targeted recommendations and a personalized development plan to accelerate individual and organizational performance.</p><p>At the end of the process, you receive a personalized report and a concrete roadmap to strengthen your effectiveness, influence and organizational impact.</p>"}}
+              ],
+              "steps": [],
+              "benefits": []
+            }
+          ]
+        },
+        {
+          "key": "leadership-retreat",
+          "title": {"fr": "Retraite Leadership", "en": "Leadership Retreat"},
+          "summary": {"fr": "Une retraite immersive de leadership pour prendre du recul, clarifier sa vision et renforcer son impact.", "en": "An immersive leadership retreat to step back, clarify one’s vision and strengthen one’s impact."},
+          "offers": [
+            {
+              "source_file": "SITE WEB ELC/3 ELC ADVISORY/Retraite Leadership/Baobab leadership immersionTM– Retraite leadershipTM/5 - Baobab Leadership Immersion.docx",
+              "title": {"fr": "Baobab Leadership Immersion®", "en": "Baobab Leadership Immersion®"},
+              "subtitle": null,
+              "signature": {"fr": "Prendre du recul. Se reconnecter. Accroître son impact.", "en": "Step back. Reconnect. Increase your impact."},
+              "summary": {"fr": "Une retraite immersive de leadership conçue pour les dirigeants, cadres supérieurs et équipes de direction souhaitant prendre du recul, clarifier leur vision et renforcer leur impact.", "en": "An immersive leadership retreat designed for leaders, senior executives and leadership teams who want to step back, clarify their vision and strengthen their impact."},
+              "sections": [
+                {"heading": null, "html": {
+                  "fr": "<p>Baobab Leadership Immersion® est une retraite immersive de leadership conçue pour les dirigeants, cadres supérieurs et équipes de direction souhaitant prendre du recul, clarifier leur vision et renforcer leur impact.</p><p>Inspirée du baobab, symbole africain de force, de sagesse et de résilience, cette expérience combine réflexion stratégique, coaching, développement personnel et intelligence collective dans un environnement propice à la transformation.</p>",
+                  "en": "<p>Baobab Leadership Immersion® is an immersive leadership retreat designed for leaders, senior executives and leadership teams who want to step back, clarify their vision and strengthen their impact.</p><p>Inspired by the baobab, an African symbol of strength, wisdom and resilience, this experience combines strategic reflection, coaching, personal development and collective intelligence in an environment conducive to transformation.</p>"}},
+                {"heading": {"fr": "Le modèle BAOBAB™", "en": "The BAOBAB™ model"}, "html": {
+                  "fr": "<p>À travers notre modèle <strong>BAOBAB™</strong> (Enracinement, Clarté, Croissance, Impact et Héritage), les participants développent une vision renouvelée de leur leadership et définissent un plan d’action concret pour créer un impact durable.</p>",
+                  "en": "<p>Through our <strong>BAOBAB™</strong> model (Rootedness, Clarity, Growth, Impact and Legacy), participants develop a renewed vision of their leadership and define a concrete action plan to create lasting impact.</p>"}},
+                {"heading": null, "html": {
+                  "fr": "<p><strong>Plus qu’une formation. Plus qu’un séminaire. Une véritable expérience de transformation de son leadership.</strong></p>",
+                  "en": "<p><strong>More than a training. More than a seminar. A true leadership transformation experience.</strong></p>"}}
+              ],
+              "steps": [],
+              "benefits": [
+                {"fr": "Clarté stratégique renforcée", "en": "Stronger strategic clarity"},
+                {"fr": "Leadership plus authentique et impactant", "en": "More authentic and impactful leadership"},
+                {"fr": "Meilleure prise de décision", "en": "Better decision-making"},
+                {"fr": "Alignement personnel et professionnel", "en": "Personal and professional alignment"},
+                {"fr": "Plan d’action orienté résultats", "en": "Results-oriented action plan"}
+              ]
+            }
+          ]
+        },
+        {
+          "key": "change-management",
+          "title": {"fr": "Change Management", "en": "Change Management"},
+          "summary": {"fr": "Accompagnement des transformations organisationnelles, RH, du capital humain et de l’exécution des projets.", "en": "Support for organizational, HR, human capital and project execution transformations."},
+          "offers": [
+            {
+              "source_file": "SITE WEB ELC/3 ELC ADVISORY/Change Management/ELC Tranformation ImpactTM/6 - Transformation Impact.docx",
+              "title": {"fr": "ELC Transformation Impact™", "en": "ELC Transformation Impact™"},
+              "subtitle": null,
+              "signature": {"fr": "Diagnostiquer. Aligner. Développer. Transformer. Impacter.", "en": "Diagnose. Align. Develop. Transform. Impact."},
+              "summary": {"fr": "Notre offre intégrée d’accompagnement pour aider les organisations à renforcer leur leadership, améliorer leur performance, réussir leurs transformations et accroître leur impact durable.", "en": "Our integrated support offer helping organizations strengthen their leadership, improve performance, succeed in their transformations and increase their lasting impact."},
+              "sections": [
+                {"heading": null, "html": {
+                  "fr": "<p>Les organisations performantes ne se transforment pas uniquement grâce à de meilleures stratégies ou de nouveaux processus. Elles se transforment lorsque leurs leaders, leurs équipes et leurs systèmes évoluent de manière cohérente et alignée.</p><p><strong>ELC Transformation Impact™</strong> est notre offre intégrée d’accompagnement conçue pour aider les organisations à renforcer leur leadership, améliorer leur performance, réussir leurs transformations et accroître leur impact durable.</p>",
+                  "en": "<p>High-performing organizations do not transform solely through better strategies or new processes. They transform when their leaders, teams and systems evolve in a coherent and aligned way.</p><p><strong>ELC Transformation Impact™</strong> is our integrated support offer designed to help organizations strengthen their leadership, improve their performance, succeed in their transformations and increase their lasting impact.</p>"}},
+                {"heading": {"fr": "Pour qui ?", "en": "Who is it for?"}, "html": {
+                  "fr": "<p>Nous accompagnons les entreprises privées, institutions publiques, organisations internationales, ONG, organisations confessionnelles et associations souhaitant renforcer leur impact et accélérer leur développement.</p>",
+                  "en": "<p>We support private companies, public institutions, international organizations, NGOs, faith-based organizations and associations seeking to strengthen their impact and accelerate their development.</p>"}}
+              ],
+              "steps": [
+                {"title": {"fr": "Diagnose", "en": "Diagnose"}, "text": {"fr": "Comprendre les forces, les défis et les opportunités grâce à des diagnostics organisationnels et des évaluations du leadership.", "en": "Understand strengths, challenges and opportunities through organizational diagnostics and leadership assessments."}},
+                {"title": {"fr": "Align", "en": "Align"}, "text": {"fr": "Créer une vision partagée, clarifier les priorités stratégiques et renforcer l’engagement des parties prenantes.", "en": "Create a shared vision, clarify strategic priorities and strengthen stakeholder engagement."}},
+                {"title": {"fr": "Develop", "en": "Develop"}, "text": {"fr": "Développer les compétences de leadership, les capacités managériales et le potentiel des talents.", "en": "Develop leadership skills, managerial capabilities and talent potential."}},
+                {"title": {"fr": "Transform", "en": "Transform"}, "text": {"fr": "Accompagner la mise en œuvre du changement et la transformation des pratiques, des équipes et des organisations.", "en": "Support the implementation of change and the transformation of practices, teams and organizations."}},
+                {"title": {"fr": "Impact", "en": "Impact"}, "text": {"fr": "Mesurer les résultats, consolider les acquis et créer une performance durable.", "en": "Measure results, consolidate gains and create sustainable performance."}}
+              ],
+              "benefits": []
+            },
+            {
+              "source_file": "SITE WEB ELC/3 ELC ADVISORY/Change Management/Insight HR transformationTM – Transformation RH/7 - INSIGHTS HR Transformation.docx",
+              "title": {"fr": "INSIGHTS HR Transformation™", "en": "INSIGHTS HR Transformation™"},
+              "subtitle": {"fr": "Votre organisation est-elle réellement alignée pour performer ?", "en": "Is your organization truly aligned to perform?"},
+              "signature": {"fr": "Diagnostiquer. Aligner. Transformer. Performer.", "en": "Diagnose. Align. Transform. Perform."},
+              "summary": {"fr": "Notre solution de diagnostic et de transformation organisationnelle qui aide les entreprises et institutions à renforcer leur performance en agissant sur les facteurs humains, managériaux et organisationnels.", "en": "Our organizational diagnostic and transformation solution that helps companies and institutions strengthen their performance by acting on human, managerial and organizational factors."},
+              "sections": [
+                {"heading": null, "html": {
+                  "fr": "<p><strong>INSIGHTS HR Transformation™</strong> est notre solution de diagnostic et de transformation organisationnelle qui aide les entreprises et institutions à renforcer leur performance en agissant sur les facteurs humains, managériaux et organisationnels.</p>",
+                  "en": "<p><strong>INSIGHTS HR Transformation™</strong> is our organizational diagnostic and transformation solution that helps companies and institutions strengthen their performance by acting on human, managerial and organizational factors.</p>"}},
+                {"heading": {"fr": "Notre intervention", "en": "What we do"}, "html": {
+                  "fr": "<ul><li>Diagnostiquer les dysfonctionnements organisationnels</li><li>Renforcer le leadership et l’engagement</li><li>Optimiser les systèmes et pratiques RH</li><li>Aligner les talents sur la stratégie</li><li>Accélérer la performance durable</li></ul>",
+                  "en": "<ul><li>Diagnose organizational dysfunctions</li><li>Strengthen leadership and engagement</li><li>Optimize HR systems and practices</li><li>Align talent with strategy</li><li>Accelerate sustainable performance</li></ul>"}},
+                {"heading": {"fr": "Notre approche", "en": "Our approach"}, "html": {
+                  "fr": "<p>Nous analysons 5 dimensions clés :</p><ul><li><strong>Culture &amp; Engagement</strong></li><li><strong>Leadership &amp; Talents</strong></li><li><strong>Systèmes de Management</strong></li><li><strong>Performance RH &amp; Business</strong></li><li><strong>Efficacité Organisationnelle</strong></li></ul>",
+                  "en": "<p>We analyze 5 key dimensions:</p><ul><li><strong>Culture &amp; Engagement</strong></li><li><strong>Leadership &amp; Talent</strong></li><li><strong>Management Systems</strong></li><li><strong>HR &amp; Business Performance</strong></li><li><strong>Organizational Effectiveness</strong></li></ul>"}},
+                {"heading": {"fr": "Pourquoi ELC ?", "en": "Why ELC?"}, "html": {
+                  "fr": "<p>Une expertise à l’intersection du <strong>leadership</strong>, des <strong>ressources humaines</strong> et de la <strong>transformation organisationnelle</strong>, adaptée aux réalités africaines.</p>",
+                  "en": "<p>Expertise at the intersection of <strong>leadership</strong>, <strong>human resources</strong> and <strong>organizational transformation</strong>, adapted to African realities.</p>"}}
+              ],
+              "steps": [],
+              "benefits": []
+            },
+            {
+              "source_file": "SITE WEB ELC/3 ELC ADVISORY/Change Management/Strategic Talent Optimization ProgramTM/8 - Strategic Talent Optimization Program.docx",
+              "title": {"fr": "Strategic Talent Optimization Program™", "en": "Strategic Talent Optimization Program™"},
+              "subtitle": null,
+              "signature": {"fr": "Identifier les talents. Développer les leaders. Sécuriser l’avenir.", "en": "Identifying Talent. Developing Leaders. Securing the Future."},
+              "summary": {"fr": "Notre offre signature dédiée à l’optimisation du capital humain : identifier les talents clés, renforcer les compétences critiques, développer les futurs leaders et mettre en place des systèmes performants de gestion des talents.", "en": "Our signature offer dedicated to human capital optimization: identifying key talent, strengthening critical skills, developing future leaders and putting effective talent management systems in place."},
+              "sections": [
+                {"heading": null, "html": {
+                  "fr": "<p>Dans un environnement en constante évolution, la réussite des organisations dépend de leur capacité à attirer, développer, mobiliser et retenir les talents les plus stratégiques.</p><p><strong>Strategic Talent Optimization Program™</strong> est notre offre signature dédiée à l’optimisation du capital humain. Elle aide les organisations à identifier les talents clés, renforcer les compétences critiques, développer les futurs leaders et mettre en place des systèmes performants de gestion des talents.</p><p>Grâce à une approche intégrée combinant diagnostic, assessment, développement du leadership, coaching, gestion des talents et planification de la relève, nous accompagnons les entreprises et institutions dans la construction d’un vivier de talents capable de soutenir leur croissance, leur compétitivité et leur transformation.</p>",
+                  "en": "<p>In a constantly changing environment, organizational success depends on the ability to attract, develop, engage and retain the most strategic talent.</p><p><strong>Strategic Talent Optimization Program™</strong> is our signature offer dedicated to human capital optimization. It helps organizations identify key talent, strengthen critical skills, develop future leaders and put effective talent management systems in place.</p><p>Through an integrated approach combining diagnostics, assessment, leadership development, coaching, talent management and succession planning, we help companies and institutions build a talent pipeline capable of supporting their growth, competitiveness and transformation.</p>"}},
+                {"heading": null, "html": {
+                  "fr": "<p><strong>Libérer le potentiel. Renforcer le leadership. Propulser la réussite organisationnelle.</strong></p>",
+                  "en": "<p><strong>Unlocking Potential. Strengthening Leadership. Driving Organizational Success.</strong></p>"}}
+              ],
+              "steps": [],
+              "benefits": []
+            },
+            {
+              "source_file": "SITE WEB ELC/3 ELC ADVISORY/Change Management/IEOTM – Implementation Excellence Office/9 - Implementation Excellence Office.docx",
+              "title": {"fr": "Implementation Excellence Office™ (IEO™)", "en": "Implementation Excellence Office™ (IEO™)"},
+              "subtitle": null,
+              "signature": {"fr": "Exécuter avec excellence. Accélérer les résultats. Pérenniser le changement.", "en": "Implementing Excellence. Accelerating Results. Sustaining Change."},
+              "summary": {"fr": "Notre offre signature dédiée à l’excellence de l’exécution des projets et programmes financés par les bailleurs de fonds.", "en": "Our signature offer dedicated to execution excellence for donor-funded projects and programs."},
+              "sections": [
+                {"heading": null, "html": {
+                  "fr": "<p>Les projets de développement ne réussissent pas uniquement grâce à la qualité de leur conception. Leur succès dépend avant tout de leur capacité à être exécutés efficacement, à générer des résultats mesurables et à produire un impact durable.</p><p><strong>Implementation Excellence Office™ (IEO™)</strong> est notre offre signature dédiée à l’excellence de l’exécution des projets et programmes financés par les bailleurs de fonds. Nous accompagnons les agences d’exécution, ONG, cabinets de conseil, consortiums, contractants principaux et institutions publiques dans le renforcement de leurs capacités de mise en œuvre, de gouvernance et de gestion de la performance.</p><p>En combinant expertise en leadership, gestion du changement, développement organisationnel, renforcement institutionnel et pilotage de projets, nous aidons nos clients à transformer les investissements de développement en résultats durables et à fort impact.</p>",
+                  "en": "<p>Development projects do not succeed solely on the quality of their design. Their success depends above all on their ability to be executed effectively, generate measurable results and produce lasting impact.</p><p><strong>Implementation Excellence Office™ (IEO™)</strong> is our signature offer dedicated to execution excellence for donor-funded projects and programs. We support implementing agencies, NGOs, consulting firms, consortia, prime contractors and public institutions in strengthening their implementation, governance and performance management capacities.</p><p>By combining expertise in leadership, change management, organizational development, institutional strengthening and project management, we help our clients turn development investments into sustainable, high-impact results.</p>"}},
+                {"heading": {"fr": "Nous aidons nos clients à :", "en": "We help our clients:"}, "html": {
+                  "fr": "<ul><li>Améliorer la gouvernance et le pilotage des projets</li><li>Renforcer les capacités organisationnelles et institutionnelles</li><li>Développer le leadership des équipes de mise en œuvre</li><li>Optimiser la coordination entre partenaires et parties prenantes</li><li>Accélérer l’exécution et la gestion des résultats</li><li>Renforcer la durabilité et l’appropriation des projets</li></ul>",
+                  "en": "<ul><li>Improve project governance and management</li><li>Strengthen organizational and institutional capacities</li><li>Develop the leadership of implementation teams</li><li>Optimize coordination between partners and stakeholders</li><li>Accelerate execution and results management</li><li>Strengthen project sustainability and ownership</li></ul>"}}
+              ],
+              "steps": [],
+              "benefits": [
+                {"fr": "Des projets mieux exécutés", "en": "Better-executed projects"},
+                {"fr": "Des organisations plus performantes", "en": "Higher-performing organizations"},
+                {"fr": "Un impact de développement plus durable", "en": "More sustainable development impact"}
+              ]
+            }
+          ]
+        },
+        {
+          "key": "growth-strategies",
+          "title": {"fr": "Growth Strategies", "en": "Growth Strategies"},
+          "summary": {"fr": "Partenariats de performance et de croissance pour les CEOs, les dirigeants et les PME.", "en": "Performance and growth partnerships for CEOs, executives and SMEs."},
+          "offers": [
+            {
+              "source_file": "SITE WEB ELC/3 ELC ADVISORY/Growth Strategies/CEO Performance and Growth PartnershipTM/10 - CEO Performance & Growth Partnership.docx",
+              "title": {"fr": "CEO Performance & Growth Partnership™", "en": "CEO Performance & Growth Partnership™"},
+              "subtitle": {"fr": "Aider les dirigeants à mieux piloter, mieux exécuter et faire croître durablement leur organisation", "en": "Helping leaders steer better, execute better and grow their organization sustainably"},
+              "signature": {"fr": "Mieux diriger. Mieux exécuter. Mieux performer.", "en": "Lead better. Execute better. Perform better."},
+              "summary": {"fr": "Un accompagnement exclusif conçu pour les CEOs, Directeurs Généraux, fondateurs et entrepreneurs qui souhaitent renforcer leur leadership tout en améliorant durablement la performance de leur organisation.", "en": "An exclusive partnership designed for CEOs, Managing Directors, founders and entrepreneurs who want to strengthen their leadership while sustainably improving their organization’s performance."},
+              "sections": [
+                {"heading": {"fr": "Un partenariat stratégique pour les dirigeants d’entreprise", "en": "A strategic partnership for business leaders"}, "html": {
+                  "fr": "<p>Diriger une entreprise aujourd’hui exige bien plus qu’une vision. Les dirigeants doivent prendre des décisions complexes, mobiliser leurs équipes, accélérer l’exécution des priorités stratégiques et assurer une croissance durable dans un environnement en constante évolution.</p><p>Le <strong>CEO Performance &amp; Growth Partnership™</strong> est un accompagnement exclusif conçu pour les CEOs, Directeurs Généraux, fondateurs et entrepreneurs qui souhaitent renforcer leur leadership tout en améliorant durablement la performance de leur organisation.</p><p>Ce n’est pas un coaching traditionnel.</p><p>C’est un partenariat stratégique qui combine conseil de direction, développement du leadership, mentorat exécutif et accompagnement à l’exécution pour produire des résultats concrets et mesurables.</p>",
+                  "en": "<p>Leading a company today takes far more than vision. Leaders must make complex decisions, mobilize their teams, accelerate the execution of strategic priorities and ensure sustainable growth in a constantly changing environment.</p><p>The <strong>CEO Performance &amp; Growth Partnership™</strong> is an exclusive engagement designed for CEOs, Managing Directors, founders and entrepreneurs who want to strengthen their leadership while sustainably improving their organization’s performance.</p><p>This is not traditional coaching.</p><p>It is a strategic partnership combining executive advisory, leadership development, executive mentoring and execution support to deliver concrete, measurable results.</p>"}},
+                {"heading": {"fr": "Les domaines d’accompagnement", "en": "Areas of support"}, "html": {
+                  "fr": "<p><strong>Leadership stratégique</strong></p><ul><li>Renforcer la prise de décision et la pensée stratégique</li><li>Aligner les équipes autour de la vision et des priorités</li><li>Développer l’influence et la crédibilité du dirigeant</li></ul><p><strong>Croissance et développement</strong></p><ul><li>Clarifier les opportunités de croissance</li><li>Préparer l’organisation au changement d’échelle</li><li>Renforcer les capacités de leadership nécessaires à la croissance</li></ul><p><strong>Excellence dans l’exécution</strong></p><ul><li>Transformer la stratégie en résultats</li><li>Renforcer la discipline d’exécution</li><li>Développer la responsabilisation et la redevabilité</li></ul><p><strong>Performance organisationnelle</strong></p><ul><li>Construire des équipes dirigeantes performantes</li><li>Renforcer l’alignement et la collaboration</li><li>Installer une culture de performance</li></ul><p><strong>Conduite du changement</strong></p><ul><li>Piloter les transformations stratégiques</li><li>Gérer la complexité et les résistances</li><li>Développer l’agilité et la résilience organisationnelle</li></ul>",
+                  "en": "<p><strong>Strategic leadership</strong></p><ul><li>Strengthen decision-making and strategic thinking</li><li>Align teams around the vision and priorities</li><li>Develop the leader’s influence and credibility</li></ul><p><strong>Growth and development</strong></p><ul><li>Clarify growth opportunities</li><li>Prepare the organization to scale</li><li>Strengthen the leadership capabilities needed for growth</li></ul><p><strong>Execution excellence</strong></p><ul><li>Turn strategy into results</li><li>Strengthen execution discipline</li><li>Develop responsibility and accountability</li></ul><p><strong>Organizational performance</strong></p><ul><li>Build high-performing leadership teams</li><li>Strengthen alignment and collaboration</li><li>Establish a performance culture</li></ul><p><strong>Change management</strong></p><ul><li>Lead strategic transformations</li><li>Manage complexity and resistance</li><li>Develop organizational agility and resilience</li></ul>"}}
+              ],
+              "steps": [],
+              "benefits": [
+                {"fr": "Une plus grande clarté stratégique", "en": "Greater strategic clarity"},
+                {"fr": "Des décisions plus rapides et plus pertinentes", "en": "Faster, more relevant decisions"},
+                {"fr": "Une meilleure exécution des priorités", "en": "Better execution of priorities"},
+                {"fr": "Une équipe de direction plus performante", "en": "A higher-performing leadership team"},
+                {"fr": "Une responsabilisation accrue", "en": "Increased accountability"},
+                {"fr": "Un meilleur alignement organisationnel", "en": "Better organizational alignment"},
+                {"fr": "Une culture de performance renforcée", "en": "A stronger performance culture"},
+                {"fr": "Une plus grande agilité face aux changements", "en": "Greater agility in the face of change"},
+                {"fr": "Une croissance durable et maîtrisée", "en": "Sustainable, well-managed growth"}
+              ]
+            },
+            {
+              "source_file": "SITE WEB ELC/3 ELC ADVISORY/Growth Strategies/Executive Performance and Growth Partnership/11 - Executive Performance and Growth Partnership.docx",
+              "title": {"fr": "Executive Performance & Growth Partnership™", "en": "Executive Performance & Growth Partnership™"},
+              "subtitle": {"fr": "Un accompagnement exécutif qui transforme le développement du leadership en résultats concrets", "en": "Executive support that turns leadership development into concrete results"},
+              "signature": {"fr": "Apprendre. Appliquer. Transformer.", "en": "Learn. Apply. Transform."},
+              "summary": {"fr": "Une démarche unique d’Action Learning combinant formation, coaching et conseil, où le dirigeant développe ses compétences tout en pilotant un projet réel de transformation, de croissance ou d’amélioration de la performance.", "en": "A unique Action Learning approach combining training, coaching and advisory, in which leaders build their skills while driving a real transformation, growth or performance improvement project."},
+              "sections": [
+                {"heading": null, "html": {
+                  "fr": "<p>La plupart des programmes de développement du leadership transmettent des connaissances. Le coaching aide à réfléchir. Le conseil apporte des recommandations.</p><p>L’<strong>Executive Performance &amp; Growth Partnership™</strong> combine les trois dans une démarche unique d’<strong>Action Learning</strong>, où le dirigeant développe ses compétences tout en pilotant un projet réel de transformation, de croissance ou d’amélioration de la performance.</p><p>L’apprentissage n’est pas séparé de l’action.</p><p>Il se déroule au cœur même des enjeux stratégiques de l’organisation.</p>",
+                  "en": "<p>Most leadership development programs transfer knowledge. Coaching helps people reflect. Consulting provides recommendations.</p><p>The <strong>Executive Performance &amp; Growth Partnership™</strong> combines all three in a unique <strong>Action Learning</strong> approach, in which leaders develop their skills while driving a real transformation, growth or performance improvement project.</p><p>Learning is not separate from action.</p><p>It takes place at the very heart of the organization’s strategic challenges.</p>"}}
+              ],
+              "steps": [
+                {"title": {"fr": "1. Apprendre – Formation individuelle ciblée", "en": "1. Learn – Targeted one-to-one training"}, "text": {"fr": "Développement des compétences essentielles au succès du dirigeant. Résultat : de nouvelles compétences et de nouvelles perspectives de leadership.", "en": "Developing the skills essential to the leader’s success. Result: new skills and new leadership perspectives."}},
+                {"title": {"fr": "2. Appliquer – Coaching exécutif", "en": "2. Apply – Executive coaching"}, "text": {"fr": "Le dirigeant travaille sur ses défis réels, teste de nouvelles approches et développe les comportements nécessaires pour réussir. Le coaching est directement connecté à un projet ou à une initiative en cours. Résultat : une évolution concrète du leadership et de l’efficacité managériale.", "en": "Leaders work on their real challenges, test new approaches and develop the behaviors needed to succeed. Coaching is directly connected to an ongoing project or initiative. Result: a concrete evolution in leadership and managerial effectiveness."}},
+                {"title": {"fr": "3. Transformer – Conseil stratégique et accompagnement à l’exécution", "en": "3. Transform – Strategic advisory and execution support"}, "text": {"fr": "Des conseils pratiques et un regard externe pour aider le dirigeant. Résultat : de meilleures décisions et une plus grande probabilité de succès.", "en": "Practical advice and an outside perspective to support the leader. Result: better decisions and a greater likelihood of success."}},
+                {"title": {"fr": "4. Générer des résultats – Suivi et responsabilisation", "en": "4. Deliver results – Follow-up and accountability"}, "text": {"fr": "Des revues régulières permettent de mesurer les progrès et de maintenir la dynamique. Résultat : un impact durable sur le dirigeant et sur l’organisation.", "en": "Regular reviews measure progress and maintain momentum. Result: lasting impact on the leader and the organization."}}
+              ],
+              "benefits": [
+                {"fr": "Leadership plus fort", "en": "Stronger leadership"},
+                {"fr": "Décisions plus pertinentes", "en": "More relevant decisions"},
+                {"fr": "Exécution plus rapide", "en": "Faster execution"},
+                {"fr": "Équipes mieux alignées", "en": "Better-aligned teams"},
+                {"fr": "Changements mieux conduits", "en": "Better-managed change"},
+                {"fr": "Performance organisationnelle renforcée", "en": "Stronger organizational performance"},
+                {"fr": "Croissance plus durable", "en": "More sustainable growth"}
+              ]
+            },
+            {
+              "source_file": "SITE WEB ELC/3 ELC ADVISORY/Growth Strategies/SME Growth and Scale-up PartnershipTM/12 - SME Growth and Scale-Up Partnership.docx",
+              "title": {"fr": "SME Growth & Scale-Up Partnership™", "en": "SME Growth & Scale-Up Partnership™"},
+              "subtitle": {"fr": "Aider les PME africaines à croître, se structurer et changer d’échelle durablement.", "en": "Helping African SMEs grow, structure themselves and scale up sustainably."},
+              "signature": {"fr": "Développer de meilleurs leaders. Bâtir de meilleures organisations. Faire croître des entreprises plus solides.", "en": "Developing Better Leaders. Building Better Organizations. Growing Stronger Businesses."},
+              "summary": {"fr": "Un programme intégré de développement des entreprises destiné aux PME à fort potentiel de croissance, combinant diagnostic, conseil, développement du leadership, accompagnement organisationnel et soutien à l’exécution.", "en": "An integrated business development program for high-growth-potential SMEs, combining diagnostics, advisory, leadership development, organizational support and execution support."},
+              "sections": [
+                {"heading": {"fr": "Un programme intégré de développement des entreprises destiné aux PME à fort potentiel de croissance", "en": "An integrated business development program for SMEs with high growth potential"}, "html": {
+                  "fr": "<p>La croissance d’une PME ne dépend pas uniquement de l’accès au financement.</p><p>Elle exige également un leadership fort, des systèmes de gestion efficaces, une organisation performante et une capacité d’exécution rigoureuse.</p><p>Le <strong>SME Growth &amp; Scale-Up Partnership™</strong> est un programme d’accompagnement conçu pour aider les PME africaines à renforcer ces capacités afin d’accélérer leur croissance, améliorer leur compétitivité, créer des emplois et préparer leur développement à long terme.</p><p>Plus qu’un programme de formation, il s’agit d’un partenariat de développement qui combine diagnostic, conseil, développement du leadership, accompagnement organisationnel et soutien à l’exécution.</p>",
+                  "en": "<p>An SME’s growth does not depend solely on access to financing.</p><p>It also requires strong leadership, effective management systems, a high-performing organization and rigorous execution capability.</p><p>The <strong>SME Growth &amp; Scale-Up Partnership™</strong> is a support program designed to help African SMEs strengthen these capabilities in order to accelerate their growth, improve their competitiveness, create jobs and prepare for long-term development.</p><p>More than a training program, it is a development partnership combining diagnostics, advisory, leadership development, organizational support and execution support.</p>"}},
+                {"heading": {"fr": "Les défis auxquels font face les PME en croissance", "en": "The challenges facing growing SMEs"}, "html": {
+                  "fr": "<p>De nombreuses entreprises rencontrent les mêmes obstacles lorsqu’elles cherchent à se développer :</p><ul><li>Dépendance excessive vis-à-vis du dirigeant</li><li>Faiblesses des systèmes de gestion</li><li>Difficultés d’exécution des plans de croissance</li><li>Organigrammes et responsabilités peu clairs</li><li>Faible culture de performance</li><li>Limites en matière de leadership et de management</li><li>Difficultés à attirer investisseurs et partenaires</li></ul><p>Sans une organisation capable de soutenir la croissance, le développement de l’entreprise finit souvent par ralentir.</p>",
+                  "en": "<p>Many companies face the same obstacles when they seek to grow:</p><ul><li>Excessive dependence on the owner-manager</li><li>Weak management systems</li><li>Difficulty executing growth plans</li><li>Unclear organizational charts and responsibilities</li><li>Weak performance culture</li><li>Leadership and management limitations</li><li>Difficulty attracting investors and partners</li></ul><p>Without an organization capable of sustaining growth, the company’s development often ends up slowing down.</p>"}},
+                {"heading": {"fr": "Nos domaines d’intervention", "en": "Our areas of intervention"}, "html": {
+                  "fr": "<ul><li>Stratégie de croissance</li><li>Leadership et management</li><li>Performance organisationnelle</li><li>Excellence opérationnelle</li><li>Préparation à la mise à l’échelle</li><li>Préparation aux investissements et partenariats</li></ul>",
+                  "en": "<ul><li>Growth strategy</li><li>Leadership and management</li><li>Organizational performance</li><li>Operational excellence</li><li>Scale-up readiness</li><li>Investment and partnership readiness</li></ul>"}},
+                {"heading": {"fr": "Signature", "en": "Signature"}, "html": {
+                  "fr": "<p>Aider les PME africaines à développer le leadership, les systèmes et les capacités organisationnelles nécessaires pour croître, créer des emplois et réussir durablement.</p>",
+                  "en": "<p>Helping African SMEs develop the leadership, systems and organizational capabilities they need to grow, create jobs and succeed sustainably.</p>"}}
+              ],
+              "steps": [],
+              "benefits": [
+                {"fr": "Une vision de croissance plus claire", "en": "A clearer growth vision"},
+                {"fr": "De meilleures pratiques de management", "en": "Better management practices"},
+                {"fr": "Une organisation plus solide", "en": "A stronger organization"},
+                {"fr": "Une exécution plus efficace des priorités", "en": "More effective execution of priorities"},
+                {"fr": "Une productivité accrue", "en": "Increased productivity"},
+                {"fr": "Une compétitivité renforcée", "en": "Stronger competitiveness"},
+                {"fr": "Une meilleure préparation aux investissements", "en": "Better investment readiness"},
+                {"fr": "Une plus grande résilience", "en": "Greater resilience"},
+                {"fr": "Une croissance durable créatrice d’emplois", "en": "Sustainable, job-creating growth"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "institute",
+      "title": {"fr": "ELC Institute", "en": "ELC Institute"},
+      "summary": {"fr": "Insights (recherche-action, thought leadership et newsletter) et développement des personnes (programmes de leadership et formations orientées résultats).", "en": "Insights (action research, thought leadership and newsletter) and people development (leadership programs and results-driven training)."},
+      "categories": [
+        {
+          "key": "insights",
+          "title": {"fr": "Insights", "en": "Insights"},
+          "summary": {"fr": "Recherche-action, publications et newsletter ELC Leadership Insights™.", "en": "Action research, publications and the ELC Leadership Insights™ newsletter."},
+          "offers": [
+            {
+              "source_file": "SITE WEB ELC/4 ELC INSTITUTE/Insights/Action Research/13 - Action Research.docx",
+              "title": {"fr": "Action Research & Organizational Transformation", "en": "Action Research & Organizational Transformation"},
+              "subtitle": {"fr": "Transformer les défis organisationnels en opportunités d’apprentissage et de progrès", "en": "Turning organizational challenges into opportunities for learning and progress"},
+              "signature": {"fr": "Comprendre. Agir. Apprendre. Transformer.", "en": "Understand. Act. Learn. Transform."},
+              "summary": {"fr": "Nous accompagnons les organisations dans l’identification, l’analyse et la résolution de leurs défis stratégiques, organisationnels ou opérationnels tout en renforçant les capacités des équipes à apprendre, innover et améliorer durablement leurs performances.", "en": "We help organizations identify, analyze and resolve their strategic, organizational or operational challenges while strengthening their teams’ capacity to learn, innovate and sustainably improve performance."},
+              "sections": [
+                {"heading": null, "html": {
+                  "fr": "<p>Les organisations sont confrontées à des défis complexes qui ne peuvent être résolus uniquement par des formations, des études ou des recommandations externes.</p><p>Pour produire des résultats durables, les solutions doivent être construites avec les personnes concernées, testées dans la réalité, ajustées en continu et intégrées aux pratiques de l’organisation.</p><p>Notre approche de la <strong>Recherche-Action (Action Research)</strong> permet précisément cela.</p><p>Nous accompagnons les organisations dans l’identification, l’analyse et la résolution de leurs défis stratégiques, organisationnels ou opérationnels tout en renforçant les capacités des équipes à apprendre, innover et améliorer durablement leurs performances.</p>",
+                  "en": "<p>Organizations face complex challenges that cannot be solved solely through training, studies or external recommendations.</p><p>To produce lasting results, solutions must be built with the people concerned, tested in real conditions, continuously adjusted and embedded in the organization’s practices.</p><p>Our <strong>Action Research</strong> approach makes exactly that possible.</p><p>We help organizations identify, analyze and resolve their strategic, organizational or operational challenges while strengthening their teams’ capacity to learn, innovate and sustainably improve their performance.</p>"}},
+                {"heading": {"fr": "Qu’est-ce que la Recherche-Action ?", "en": "What is Action Research?"}, "html": {
+                  "fr": "<p>La Recherche-Action est une approche participative qui associe analyse, expérimentation, apprentissage et amélioration continue.</p><p>Au lieu de simplement étudier un problème et proposer des recommandations, nous travaillons avec les parties prenantes pour :</p><ul><li>Comprendre la situation actuelle</li><li>Identifier les causes profondes</li><li>Concevoir des solutions adaptées</li><li>Tester et ajuster les actions</li><li>Mesurer les résultats</li><li>Capitaliser les apprentissages</li></ul><p>L’objectif n’est pas seulement de résoudre un problème, mais également de renforcer durablement les capacités de l’organisation.</p>",
+                  "en": "<p>Action Research is a participatory approach that combines analysis, experimentation, learning and continuous improvement.</p><p>Instead of simply studying a problem and making recommendations, we work with stakeholders to:</p><ul><li>Understand the current situation</li><li>Identify root causes</li><li>Design appropriate solutions</li><li>Test and adjust actions</li><li>Measure results</li><li>Capitalize on lessons learned</li></ul><p>The goal is not only to solve a problem, but also to build the organization’s capabilities for the long term.</p>"}},
+                {"heading": {"fr": "Domaines d’application", "en": "Areas of application"}, "html": {
+                  "fr": "<p>Nos démarches de Recherche-Action peuvent être utilisées pour :</p><ul><li>Transformation Organisationnelle</li><li>Leadership et Management</li><li>Développement Organisationnel</li><li>Développement des Programmes et Projets</li><li>Entrepreneuriat et Développement des PME</li></ul>",
+                  "en": "<p>Our Action Research approaches can be applied to:</p><ul><li>Organizational Transformation</li><li>Leadership and Management</li><li>Organizational Development</li><li>Program and Project Development</li><li>Entrepreneurship and SME Development</li></ul>"}},
+                {"heading": {"fr": "Ce qui rend notre approche unique", "en": "What makes our approach unique"}, "html": {
+                  "fr": "<p>Nous ne travaillons pas uniquement comme chercheurs.</p><p>Nous ne travaillons pas uniquement comme consultants.</p><p>Nous agissons comme des facilitateurs du changement et de l’apprentissage organisationnel.</p><p>Notre approche combine :</p><ul><li>Recherche appliquée</li><li>Développement organisationnel</li><li>Accompagnement du changement</li><li>Facilitation participative</li><li>Développement du leadership</li><li>Résolution collaborative de problèmes</li><li>Renforcement des capacités</li><li>Gestion de la performance</li></ul>",
+                  "en": "<p>We do not work only as researchers.</p><p>We do not work only as consultants.</p><p>We act as facilitators of change and organizational learning.</p><p>Our approach combines:</p><ul><li>Applied research</li><li>Organizational development</li><li>Change support</li><li>Participatory facilitation</li><li>Leadership development</li><li>Collaborative problem-solving</li><li>Capacity building</li><li>Performance management</li></ul>"}},
+                {"heading": {"fr": "Notre conviction", "en": "Our conviction"}, "html": {
+                  "fr": "<p>Les transformations durables ne se décrètent pas.</p><p>Elles se construisent par l’action, la réflexion et l’apprentissage collectif.</p><p><strong>Comprendre pour agir. Agir pour apprendre. Apprendre pour transformer.</strong></p>",
+                  "en": "<p>Lasting transformations cannot be decreed.</p><p>They are built through action, reflection and collective learning.</p><p><strong>Understand to act. Act to learn. Learn to transform.</strong></p>"}}
+              ],
+              "steps": [
+                {"title": {"fr": "Diagnostiquer", "en": "Diagnose"}, "text": {"fr": "Comprendre les enjeux, les défis et les opportunités à travers une analyse participative impliquant les acteurs clés.", "en": "Understand the issues, challenges and opportunities through a participatory analysis involving key stakeholders."}},
+                {"title": {"fr": "Concevoir", "en": "Design"}, "text": {"fr": "Co-créer des solutions réalistes et adaptées aux spécificités de l’organisation.", "en": "Co-create realistic solutions tailored to the organization’s specific characteristics."}},
+                {"title": {"fr": "Expérimenter", "en": "Experiment"}, "text": {"fr": "Mettre en œuvre des actions pilotes et tester de nouvelles pratiques dans un environnement réel.", "en": "Implement pilot actions and test new practices in a real environment."}},
+                {"title": {"fr": "Apprendre", "en": "Learn"}, "text": {"fr": "Analyser les résultats, identifier les leçons apprises et ajuster les approches.", "en": "Analyze results, identify lessons learned and adjust approaches."}},
+                {"title": {"fr": "Transformer", "en": "Transform"}, "text": {"fr": "Institutionnaliser les bonnes pratiques et renforcer les capacités organisationnelles pour assurer un impact durable.", "en": "Institutionalize good practices and strengthen organizational capabilities to ensure lasting impact."}}
+              ],
+              "benefits": [
+                {"fr": "Une meilleure compréhension de leurs défis", "en": "A better understanding of their challenges"},
+                {"fr": "Des solutions mieux adaptées à leur contexte", "en": "Solutions better suited to their context"},
+                {"fr": "Une plus grande appropriation du changement", "en": "Greater ownership of change"},
+                {"fr": "Une amélioration durable des pratiques", "en": "Lasting improvement in practices"},
+                {"fr": "Une culture d’apprentissage renforcée", "en": "A stronger learning culture"},
+                {"fr": "Une participation accrue des parties prenantes", "en": "Increased stakeholder participation"},
+                {"fr": "Une meilleure capacité d’innovation", "en": "Greater capacity for innovation"},
+                {"fr": "Une performance organisationnelle améliorée", "en": "Improved organizational performance"}
+              ]
+            },
+            {
+              "source_file": "SITE WEB ELC/4 ELC INSTITUTE/Insights/Thought Leadership + Newsletters/14 - Thought Leadership.docx",
+              "title": {"fr": "Thought Leadership & Insights", "en": "Thought Leadership & Insights"},
+              "subtitle": {"fr": "Des idées qui éclairent l’action. Des perspectives qui stimulent la performance.", "en": "Ideas that inform action. Perspectives that drive performance."},
+              "signature": {"fr": "Développer de meilleurs leaders. Construire de meilleures organisations. Produire de meilleurs résultats.", "en": "Developing better leaders. Building better organizations. Delivering better results."},
+              "summary": {"fr": "À travers nos articles, analyses, études de cas et publications, nous partageons des idées pratiques pour aider les leaders à mieux diriger, mieux exécuter et obtenir des résultats durables.", "en": "Through our articles, analyses, case studies and publications, we share practical ideas to help leaders lead better, execute better and achieve lasting results."},
+              "sections": [
+                {"heading": null, "html": {
+                  "fr": "<p>Chez Effective Leadership Consulting, nous croyons que les meilleures décisions naissent de la réflexion éclairée, de l’expérience terrain et d’une compréhension approfondie des défis auxquels sont confrontés les dirigeants et les organisations.</p><p>À travers nos articles, analyses, études de cas et publications, nous partageons des idées pratiques pour aider les leaders à mieux diriger, mieux exécuter et obtenir des résultats durables.</p>",
+                  "en": "<p>At Effective Leadership Consulting, we believe the best decisions are born of informed reflection, field experience and a deep understanding of the challenges leaders and organizations face.</p><p>Through our articles, analyses, case studies and publications, we share practical ideas to help leaders lead better, execute better and achieve lasting results.</p>"}},
+                {"heading": {"fr": "Nos thématiques", "en": "Our topics"}, "html": {
+                  "fr": "<p>Nos contenus portent notamment sur :</p><ul><li>Leadership et management</li><li>Performance organisationnelle</li><li>Conduite du changement</li><li>Développement des dirigeants</li><li>Transformation organisationnelle</li><li>Exécution de la stratégie</li><li>Croissance des PME</li><li>Développement du capital humain</li><li>Gouvernance et efficacité institutionnelle</li></ul><p>Notre ambition est simple : transformer des concepts en actions et des idées en résultats.</p>",
+                  "en": "<p>Our content covers, among other topics:</p><ul><li>Leadership and management</li><li>Organizational performance</li><li>Change management</li><li>Executive development</li><li>Organizational transformation</li><li>Strategy execution</li><li>SME growth</li><li>Human capital development</li><li>Governance and institutional effectiveness</li></ul><p>Our ambition is simple: to turn concepts into action and ideas into results.</p>"}},
+                {"heading": {"fr": "ELC Leadership Insights™ – Notre newsletter", "en": "ELC Leadership Insights™ – Our newsletter"}, "html": {
+                  "fr": "<p>Recevez régulièrement des analyses, outils, bonnes pratiques et retours d’expérience pour renforcer votre leadership et améliorer la performance de votre organisation.</p><p>Chaque édition vous apporte :</p><ul><li>Des réflexions stratégiques pour les dirigeants</li><li>Des outils pratiques de management et de leadership</li><li>Des cas concrets et leçons apprises</li><li>Des tendances et enjeux organisationnels</li><li>Des ressources pour accompagner la croissance et le changement</li></ul><p><strong>Rejoignez notre communauté de dirigeants et de professionnels engagés dans la construction d’organisations plus performantes, plus agiles et plus durables.</strong></p>",
+                  "en": "<p>Regularly receive analyses, tools, best practices and lessons from experience to strengthen your leadership and improve your organization’s performance.</p><p>Each edition brings you:</p><ul><li>Strategic reflections for leaders</li><li>Practical management and leadership tools</li><li>Real cases and lessons learned</li><li>Organizational trends and issues</li><li>Resources to support growth and change</li></ul><p><strong>Join our community of leaders and professionals committed to building more effective, more agile and more sustainable organizations.</strong></p>"}}
+              ],
+              "steps": [],
+              "benefits": []
+            }
+          ]
+        },
+        {
+          "key": "people-development",
+          "title": {"fr": "People Development", "en": "People Development"},
+          "summary": {"fr": "Leadership Development et Leadership Academy : programmes de leadership par l’action et formations orientées résultats.", "en": "Leadership Development and Leadership Academy: action-based leadership programs and results-driven training."},
+          "offers": [
+            {
+              "source_file": "SITE WEB ELC/4 ELC INSTITUTE/People Development/Leadership Academy/Leadership Impact Programs/15 - ELC Leadership Impact Program.docx",
+              "title": {"fr": "ELC Leadership Impact Program®", "en": "ELC Leadership Impact Program®"},
+              "subtitle": {"fr": "Développer des leaders capables de produire des résultats stratégiques.", "en": "Developing leaders capable of delivering strategic results."},
+              "signature": {"fr": "Développer des leaders. Produire des résultats. Transformer les organisations.", "en": "Develop leaders. Deliver results. Transform organizations."},
+              "summary": {"fr": "Nous développons les leaders à travers la réalisation de projets réels alignés sur les priorités stratégiques de l’entreprise, pour un impact concret sur l’organisation.", "en": "We develop leaders through real projects aligned with the company’s strategic priorities, generating concrete impact for the organization."},
+              "sections": [
+                {"heading": {"fr": "Quand le développement du leadership devient un levier de performance organisationnelle", "en": "When leadership development becomes a lever for organizational performance"}, "html": {
+                  "fr": "<p>Trop de programmes de leadership développent des compétences sans produire de résultats tangibles pour l’organisation.</p><p>Le <strong>ELC Leadership Impact Program®</strong> adopte une approche différente.</p><p>Nous développons les leaders à travers la réalisation de projets réels alignés sur les priorités stratégiques de l’entreprise. Les participants apprennent, expérimentent et appliquent immédiatement leurs acquis tout en générant un impact concret pour leur organisation.</p><p><strong>Le leadership se développe par l’action. La performance se construit par l’exécution.</strong></p>",
+                  "en": "<p>Too many leadership programs build skills without producing tangible results for the organization.</p><p>The <strong>ELC Leadership Impact Program®</strong> takes a different approach.</p><p>We develop leaders through real projects aligned with the company’s strategic priorities. Participants learn, experiment and immediately apply what they have learned while generating concrete impact for their organization.</p><p><strong>Leadership is developed through action. Performance is built through execution.</strong></p>"}},
+                {"heading": {"fr": "Notre approche : Leadership Transformation Model®", "en": "Our approach: Leadership Transformation Model®"}, "html": {
+                  "fr": "<p>Notre méthodologie exclusive repose sur un processus structuré qui permet d’aligner le développement du leadership sur les résultats attendus par l’organisation.</p>",
+                  "en": "<p>Our proprietary methodology is based on a structured process that aligns leadership development with the results the organization expects.</p>"}},
+                {"heading": {"fr": "Le cœur du programme : les Leadership Growth Projects®", "en": "The heart of the program: Leadership Growth Projects®"}, "html": {
+                  "fr": "<p>Chaque participant conduit un projet concret directement lié aux priorités de son organisation.</p><p>Ces projets permettent de :</p><ul><li>Développer les compétences de leadership dans un contexte réel</li><li>Accélérer la mise en œuvre d’initiatives stratégiques</li><li>Résoudre des défis organisationnels importants</li><li>Produire des résultats visibles et mesurables</li></ul><p>L’apprentissage devient ainsi un moteur de transformation et de performance.</p>",
+                  "en": "<p>Each participant leads a concrete project directly linked to their organization’s priorities.</p><p>These projects make it possible to:</p><ul><li>Develop leadership skills in a real-world context</li><li>Accelerate the implementation of strategic initiatives</li><li>Solve significant organizational challenges</li><li>Produce visible, measurable results</li></ul><p>Learning thus becomes a driver of transformation and performance.</p>"}},
+                {"heading": {"fr": "Pour qui ?", "en": "Who is it for?"}, "html": {
+                  "fr": "<p>Le programme est conçu pour :</p><ul><li>Membres de Comités de Direction</li><li>Managers et cadres à fort potentiel</li><li>Managers de proximité</li><li>Responsables de projets stratégiques</li><li>Futurs leaders identifiés dans les plans de succession</li></ul><p>Chaque contenu de programme est adapté aux besoins des cibles.</p>",
+                  "en": "<p>The program is designed for:</p><ul><li>Executive Committee members</li><li>High-potential managers and executives</li><li>Frontline managers</li><li>Strategic project leaders</li><li>Future leaders identified in succession plans</li></ul><p>Each program’s content is tailored to the needs of its target audience.</p>"}},
+                {"heading": {"fr": "Bénéfices pour les participants", "en": "Benefits for participants"}, "html": {
+                  "fr": "<ul><li>Leadership renforcé</li><li>Posture managériale plus affirmée</li><li>Meilleure capacité à mobiliser les équipes</li><li>Plus grande efficacité dans la conduite du changement</li></ul>",
+                  "en": "<ul><li>Stronger leadership</li><li>A more assertive managerial stance</li><li>Greater ability to mobilize teams</li><li>Greater effectiveness in leading change</li></ul>"}},
+                {"heading": {"fr": "Notre promesse", "en": "Our promise"}, "html": {
+                  "fr": "<p><strong>Développer des leaders. Produire des résultats. Transformer les organisations.</strong></p><p><strong>Parce que le véritable leadership se mesure moins à ce que l’on apprend qu’à ce que l’on accomplit.</strong></p>",
+                  "en": "<p><strong>Develop leaders. Deliver results. Transform organizations.</strong></p><p><strong>Because true leadership is measured less by what you learn than by what you accomplish.</strong></p>"}}
+              ],
+              "steps": [],
+              "benefits": [
+                {"fr": "Réalisation de projets à forte valeur ajoutée", "en": "Delivery of high-value projects"},
+                {"fr": "Renforcement du vivier de leadership", "en": "A stronger leadership pipeline"},
+                {"fr": "Amélioration de la performance collective", "en": "Improved collective performance"},
+                {"fr": "Accélération de l’exécution stratégique", "en": "Faster strategic execution"},
+                {"fr": "Meilleur retour sur investissement des actions de développement", "en": "Better return on investment from development initiatives"}
+              ]
+            },
+            {
+              "source_file": "SITE WEB ELC/4 ELC INSTITUTE/People Development/Leadership Academy/Training Result – Formation/16 - Training Results.docx",
+              "title": {"fr": "Training Results™", "en": "Training Results™"},
+              "subtitle": {"fr": "Transformer les formations en résultats mesurables.", "en": "Turning training into measurable results."},
+              "signature": {"fr": "Apprendre, appliquer et transformer pour mieux performer.", "en": "Learn, apply and transform to perform better."},
+              "summary": {"fr": "Une méthodologie qui relie directement les actions de formation aux objectifs stratégiques et aux performances attendues de l’organisation.", "en": "A methodology that directly links training initiatives to the organization’s strategic objectives and expected performance."},
+              "sections": [
+                {"heading": {"fr": "Parce qu’une formation n’a de valeur que lorsqu’elle améliore réellement la performance", "en": "Because training only has value when it truly improves performance"}, "html": {
+                  "fr": "<p>Chez Effective Leadership Consulting, nous sommes convaincus que l’objectif d’une formation n’est pas de transmettre des connaissances, mais de produire des changements durables dans les comportements, les pratiques et les résultats.</p><p>C’est pourquoi nous avons développé <strong>Training Results™</strong>, une méthodologie qui relie directement les actions de formation aux objectifs stratégiques et aux performances attendues de l’organisation.</p>",
+                  "en": "<p>At Effective Leadership Consulting, we are convinced that the purpose of training is not to transfer knowledge, but to produce lasting changes in behaviors, practices and results.</p><p>That is why we developed <strong>Training Results™</strong>, a methodology that directly links training initiatives to the organization’s strategic objectives and expected performance.</p>"}},
+                {"heading": {"fr": "Notre approche", "en": "Our approach"}, "html": {
+                  "fr": "<p><strong>De la formation aux résultats</strong></p><p>Notre méthodologie combine diagnostic, conception sur mesure, apprentissage expérientiel, accompagnement terrain et mesure d’impact afin de garantir un véritable retour sur investissement.</p><p><strong>Une pédagogie centrée sur l’action</strong></p><p>Les participants apprennent en résolvant des problèmes, en analysant leurs propres défis et en construisant des solutions directement applicables à leur environnement de travail.</p>",
+                  "en": "<p><strong>From training to results</strong></p><p>Our methodology combines diagnostics, tailored design, experiential learning, on-the-job support and impact measurement to guarantee a genuine return on investment.</p><p><strong>Action-centered learning</strong></p><p>Participants learn by solving problems, analyzing their own challenges and building solutions they can apply directly in their work environment.</p>"}},
+                {"heading": {"fr": "Notre engagement", "en": "Our commitment"}, "html": {
+                  "fr": "<p><strong>Nous ne formons pas pour transmettre du savoir.</strong></p><p><strong>Nous développons les compétences qui permettent d’obtenir des résultats.</strong></p>",
+                  "en": "<p><strong>We do not train to transfer knowledge.</strong></p><p><strong>We develop the skills that deliver results.</strong></p>"}}
+              ],
+              "steps": [],
+              "benefits": [
+                {"fr": "Des managers plus performants", "en": "More effective managers"},
+                {"fr": "Des équipes plus efficaces", "en": "More efficient teams"},
+                {"fr": "Une meilleure exécution des priorités", "en": "Better execution of priorities"},
+                {"fr": "Une amélioration mesurable des pratiques", "en": "Measurable improvement in practices"},
+                {"fr": "Une plus grande responsabilisation", "en": "Greater accountability"},
+                {"fr": "Une performance organisationnelle renforcée", "en": "Stronger organizational performance"},
+                {"fr": "Un retour sur investissement plus élevé des actions de développement", "en": "Higher return on investment from development initiatives"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "contact": {
+    "address": {"fr": "Liberté 6 Extension, Immeuble Sérigne FALLOU/UNO, Dakar, Sénégal", "en": "Liberté 6 Extension, Sérigne FALLOU/UNO Building, Dakar, Senegal"},
+    "email": "infos@effectiveleadership.consulting",
+    "phones": ["+221 33 827 94 91", "+221 77 467 67 96", "+221 77 254 89 89"],
+    "website": "www.effectiveleadership.consulting",
+    "socials": [
+      {"network": "facebook", "label": "Effective Leadership"},
+      {"network": "linkedin", "label": "Effective Leadership"}
+    ]
+  },
+
+  "notes": [
+    "People Development: 'Leadership Academy' and 'Leadership Development' folders contain byte-identical documents (15 - ELC Leadership Impact Program[- Copie].docx, 16 - Training Results[- Copie].docx; diff -r shows no differences). Each offer is included once; source_file points to the Leadership Academy copy. The sitemap and presentation list both sub-headings with the same two offers - decide whether to show both labels or merge.",
+    "No case studies with client/sector/country/year exist in the sources; case_studies is []. 'Nos réalisations' only gives 5 generic project types (in case_studies_intro and about.sections) plus 5 stats.",
+    "No testimonials in any source although the sitemap lists a 'Testimonials' page; testimonials is [].",
+    "Values have titles only (no descriptions in sources); values[].text is null.",
+    "Pole/category summaries are editorial (built from the offer/category names), not client text - have the client validate. subtitle is null where the doc has none.",
+    "English mottos found in French docs (Executive Leadership Assessment, Transformation Impact, Strategic Talent Optimization, IEO, SME Growth) are kept verbatim in 'en' and translated in 'fr'; the client may prefer the English originals on the FR site too. Transformation Impact step titles kept in English in both languages, as in source.",
+    "Trademark symbols are inconsistent: Baobab Leadership Immersion and ELC Leadership Impact Program use ® in their docs but ™ in sitemap/presentation; Executive Performance & Growth Partnership has no ™ in its doc title but ™ in body/presentation (™ used). Doc symbols kept.",
+    "Executive Performance & Growth Partnership doc: two lists are empty in the source ('Développement des compétences essentielles au succès du dirigeant :' and 'aider le dirigeant à :' are followed by nothing). Text left as-is.",
+    "ELC Leadership Impact Program doc: 'Leadership Transformation Model®' intro ends with ':' but the process/model content is missing (probably a missing graphic). Participants' benefits are in sections; benefits[] holds the organization-level benefits.",
+    "Founder title differs: 'Founder & Managing Partner' (Qui sommes-nous doc) vs 'Founder & Managing Director' (presentation). Presentation line '15 dans les secteurs de l’Education, la Baque…' is missing 'ans' and has a typo (Banque); rendered as '15 [ans]' in facts.",
+    "Presentation slide 9 'Nos Offres Signature' confirms the Advisory/Institute tree used here. No country list appears in the sources (only Dakar/Senegal HQ; references include Chambre de Commerce de Djibouti).",
+    "References: all 35 logos identified visually / via alt text; reference 'sector' values were assigned by me from general knowledge, not given by the client. Référence slide in the presentation (slide 12) uses the same 35 logos.",
+    "Images: the presentation contains no usable photos - only the ELC wordmark logo (copied to brand/elc-logo.png, 354x101), two banner-header variants of that logo, the 35 client logos, and LinkedIn/Facebook icons. photos/ was therefore not created.",
+    "Phone numbers normalized to +221 format (source: '221 33 827 94 91 / 221 77 467 67 96 / 221 77 254 89 89'). Social handles in source: '@Effective Leadership' on both Facebook and LinkedIn; no URLs given.",
+    "Sitemap (NOTE DE TRAVAIL) also lists Contacts > 'Carrière' page; no content provided for it. Logo and graphic charter are also listed as to-do items."
+  ]
+}

@@ -1,0 +1,244 @@
+/*
+ * Feuille de style du site public ELC.
+ * Les couleurs et polices viennent des réglages (variables CSS injectées dans le <head>).
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --brand: 21 96 128;
+        --brand2: 0 128 128;
+        --ink: 12 43 58;
+        --accent2: 201 151 63;
+        --radius: 4px;
+        --font-heading: 'Merriweather';
+        --font-body: 'Source Sans 3';
+        --header-h: 84px;
+    }
+
+    html {
+        @apply scroll-smooth;
+        scroll-padding-top: calc(var(--header-h) + 16px);
+    }
+
+    body {
+        @apply bg-white font-body text-[17px] leading-relaxed text-slate-700 antialiased;
+    }
+
+    h1, h2, h3, h4 {
+        @apply font-heading text-ink;
+        text-wrap: balance;
+    }
+
+    ::selection {
+        @apply bg-brand/20;
+    }
+
+    :focus-visible {
+        @apply outline-2 outline-offset-2 outline-brand;
+    }
+
+    [x-cloak] {
+        display: none !important;
+    }
+}
+
+@layer components {
+    .container-elc {
+        @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+    }
+
+    /* ── Titres de section ── */
+    .elc-eyebrow {
+        @apply mb-4 inline-flex items-center gap-3 text-[13px] font-semibold uppercase tracking-[0.18em] text-brand2;
+    }
+    .elc-eyebrow::before {
+        content: '';
+        @apply h-px w-8 bg-accent2;
+    }
+    .elc-title {
+        @apply font-heading text-3xl font-bold leading-tight text-ink md:text-4xl lg:text-[2.6rem];
+    }
+    .elc-lead {
+        @apply text-lg leading-relaxed text-slate-600 md:text-xl;
+    }
+    .elc-muted {
+        @apply text-slate-500;
+    }
+
+    /* ── Boutons ── */
+    .btn {
+        @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-[15px] font-semibold tracking-wide transition duration-200;
+        border-radius: var(--radius);
+    }
+    .btn svg {
+        @apply size-4 transition-transform duration-200;
+    }
+    .btn:hover svg {
+        @apply translate-x-0.5;
+    }
+    .btn-primary {
+        @apply bg-brand text-white shadow-sm hover:bg-ink;
+    }
+    .btn-secondary {
+        @apply bg-brand2 text-white shadow-sm hover:bg-ink;
+    }
+    .btn-outline {
+        @apply border border-brand/40 text-brand hover:border-brand hover:bg-brand hover:text-white;
+    }
+    .btn-link {
+        @apply px-0 text-brand underline-offset-4 hover:underline;
+    }
+
+    /* ── Cartes ── */
+    .elc-card {
+        @apply relative flex h-full flex-col bg-white p-7 transition duration-300;
+        border-radius: calc(var(--radius) * 2);
+    }
+
+    /* ── Texte riche ── */
+    .elc-prose {
+        @apply text-[17px] leading-[1.8] text-slate-700;
+    }
+    .elc-prose > * + * {
+        @apply mt-5;
+    }
+    .elc-prose h2 {
+        @apply mt-10 text-2xl font-bold md:text-3xl;
+    }
+    .elc-prose h3 {
+        @apply mt-8 text-xl font-bold;
+    }
+    .elc-prose h4 {
+        @apply mt-6 text-lg font-bold;
+    }
+    .elc-prose h2:first-child,
+    .elc-prose h3:first-child {
+        @apply mt-0;
+    }
+    .elc-prose strong {
+        @apply font-semibold text-ink;
+    }
+    .elc-prose a {
+        @apply font-medium text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand;
+    }
+    .elc-prose ul {
+        @apply space-y-2 pl-0;
+    }
+    .elc-prose ul > li {
+        @apply relative pl-7;
+    }
+    .elc-prose ul > li::before {
+        content: '';
+        @apply absolute left-1 top-[0.7em] size-2 rotate-45 bg-brand2;
+    }
+    .elc-prose ol {
+        @apply list-decimal space-y-2 pl-6 marker:font-semibold marker:text-brand;
+    }
+    .elc-prose blockquote {
+        @apply border-l-4 border-accent2 bg-slate-50 py-4 pl-6 pr-4 font-heading text-lg italic text-ink;
+    }
+    .elc-prose hr {
+        @apply my-10 border-slate-200;
+    }
+
+    /* ── Sections sur fond foncé ── */
+    .tone-dark {
+        @apply text-white/85;
+    }
+    .tone-dark :is(h1, h2, h3, h4, .elc-title) {
+        @apply text-white;
+    }
+    .tone-dark .elc-eyebrow {
+        @apply text-white/80;
+    }
+    .tone-dark .elc-lead,
+    .tone-dark .elc-muted {
+        @apply text-white/75;
+    }
+    .tone-dark .elc-prose {
+        @apply text-white/85;
+    }
+    .tone-dark .elc-prose strong {
+        @apply text-white;
+    }
+    .tone-dark .elc-prose a {
+        @apply text-white decoration-white/40;
+    }
+    .tone-dark .elc-prose ul > li::before {
+        @apply bg-accent2;
+    }
+    .tone-dark .btn-primary {
+        @apply bg-white text-ink hover:bg-accent2 hover:text-white;
+    }
+    .tone-dark .btn-outline {
+        @apply border-white/50 text-white hover:border-white hover:bg-white hover:text-ink;
+    }
+    .tone-dark .btn-link {
+        @apply text-white;
+    }
+    /* Les cartes blanches restent lisibles sur fond foncé. */
+    .tone-dark .elc-card {
+        @apply text-slate-700;
+    }
+    .tone-dark .elc-card :is(h2, h3, h4) {
+        @apply text-ink;
+    }
+    .tone-dark .elc-card .elc-muted {
+        @apply text-slate-500;
+    }
+
+    /* ── Formulaires ── */
+    .elc-input {
+        @apply block w-full border border-slate-300 bg-white px-4 py-3 text-base text-ink placeholder:text-slate-400 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20;
+        border-radius: var(--radius);
+    }
+    .elc-label {
+        @apply mb-1.5 block text-sm font-semibold text-ink;
+    }
+    .tone-dark .elc-label {
+        @apply text-white;
+    }
+
+    /* Apparition au défilement */
+    .reveal {
+        @apply translate-y-6 opacity-0 transition duration-700 ease-out;
+    }
+    .reveal.is-visible {
+        @apply translate-y-0 opacity-100;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .reveal {
+            @apply translate-y-0 opacity-100 transition-none;
+        }
+    }
+
+    /* Motif discret (points) pour les fonds */
+    .elc-pattern {
+        background-image: radial-gradient(rgb(255 255 255 / 0.12) 1px, transparent 1px);
+        background-size: 22px 22px;
+    }
+    .elc-pattern-dark {
+        background-image: radial-gradient(rgb(var(--brand) / 0.12) 1px, transparent 1px);
+        background-size: 22px 22px;
+    }
+}
+
+@layer utilities {
+    @keyframes elc-marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+    .animate-marquee {
+        animation: elc-marquee 40s linear infinite;
+    }
+    .animate-marquee:hover {
+        animation-play-state: paused;
+    }
+}

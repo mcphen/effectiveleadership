@@ -3,21 +3,27 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Compte administrateur + contenu initial du site.
+     * Identifiants : variables ADMIN_EMAIL / ADMIN_PASSWORD du fichier .env.
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        User::query()->updateOrCreate(
+            ['email' => env('ADMIN_EMAIL', 'admin@elc.test')],
+            [
+                'name' => env('ADMIN_NAME', 'Administrateur ELC'),
+                'password' => env('ADMIN_PASSWORD', 'ChangeMoi-2026'),
+                'role' => 'admin',
+                'is_active' => true,
+                'email_verified_at' => now(),
+            ],
+        );
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        $this->call(ContentSeeder::class);
     }
 }

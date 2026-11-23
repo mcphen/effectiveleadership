@@ -13,6 +13,9 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Instrument Sans', ...defaultTheme.fontFamily.sans],
+                // Site public : polices choisies dans les réglages
+                heading: ['var(--font-heading)', 'Georgia', 'serif'],
+                body: ['var(--font-body)', ...defaultTheme.fontFamily.sans],
             },
             borderRadius: {
                 lg: 'var(--radius)',
@@ -20,6 +23,11 @@ export default {
                 sm: 'calc(var(--radius) - 4px)',
             },
             colors: {
+                // Site public : couleurs définies dans Réglages › Couleurs
+                brand: 'rgb(var(--brand) / <alpha-value>)',
+                brand2: 'rgb(var(--brand2) / <alpha-value>)',
+                ink: 'rgb(var(--ink) / <alpha-value>)',
+                accent2: 'rgb(var(--accent2) / <alpha-value>)',
                 background: 'hsl(var(--background))',
                 foreground: 'hsl(var(--foreground))',
                 card: {
