@@ -7,6 +7,7 @@ import type { DefineComponent } from 'vue';
 import { createApp, h } from 'vue';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import { initializeTheme } from './composables/useAppearance';
+import { spoofedMethod, withMethodField } from './lib/http';
 
 // Extend ImportMeta interface for Vite...
 declare module 'vite/client' {
@@ -22,12 +23,11 @@ declare module 'vite/client' {
 }
 
 // Le pare-feu du site (Sucuri / GoDaddy Website Security) bloque les requêtes PUT, PATCH et DELETE.
-// On les envoie donc en POST avec l'en-tête X-HTTP-Method-Override, que Laravel comprend nativement.
 axios.interceptors.request.use((config) => {
-    const method = config.method?.toUpperCase();
-    if (method === 'PUT' || method === 'PATCH' || method === 'DELETE') {
+    const method = config.method?.toUpperCase() ?? 'GET';
+    if (spoofedMethod(method)) {
         config.method = 'post';
-        config.headers.set('X-HTTP-Method-Override', method);
+        config.data = withMethodField(method, config.data);
     }
     return config;
 });

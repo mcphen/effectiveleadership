@@ -109,15 +109,15 @@ test('le nettoyeur HTML retire les attributs et liens dangereux', function () {
         ->toBe('<p>a <a>b</a> <a href="page:3" target="_blank" rel="noopener">c</a></p>');
 });
 
-test('les requêtes PUT et DELETE passent en POST avec X-HTTP-Method-Override (pare-feu Sucuri)', function () {
+test('les requêtes PUT et DELETE passent en POST avec _method (pare-feu Sucuri)', function () {
     $this->actingAs($this->editor);
     $page = Page::query()->create(['title' => ['fr' => 'À supprimer'], 'slug' => ['fr' => 'a-supprimer'], 'status' => 'published', 'blocks' => []]);
 
-    $this->post("/admin/content/pages/{$page->id}", [
-        'title' => ['fr' => 'Renommée', 'en' => ''], 'status' => 'published',
-    ], ['X-HTTP-Method-Override' => 'PUT'])->assertRedirect();
+    $this->postJson("/admin/content/pages/{$page->id}", [
+        '_method' => 'PUT', 'title' => ['fr' => 'Renommée', 'en' => ''], 'status' => 'published',
+    ], ['X-Inertia' => 'true'])->assertRedirect();
     expect($page->fresh()->getTranslation('title', 'fr'))->toBe('Renommée');
 
-    $this->post("/admin/content/pages/{$page->id}", [], ['X-HTTP-Method-Override' => 'DELETE'])->assertRedirect();
+    $this->postJson("/admin/content/pages/{$page->id}", ['_method' => 'DELETE'], ['X-Inertia' => 'true'])->assertRedirect();
     expect(Page::query()->find($page->id))->toBeNull();
 });
