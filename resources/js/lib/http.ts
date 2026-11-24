@@ -5,10 +5,16 @@ function xsrf(): string {
 }
 
 export async function http<T = any>(url: string, options: RequestInit = {}): Promise<T> {
+    // PUT/PATCH/DELETE passent en POST + X-HTTP-Method-Override (bloqués par le pare-feu Sucuri), voir app.ts.
+    const method = (options.method ?? 'GET').toUpperCase();
+    const override = ['PUT', 'PATCH', 'DELETE'].includes(method);
+
     const response = await fetch(url, {
         credentials: 'same-origin',
         ...options,
+        method: override ? 'POST' : method,
         headers: {
+            ...(override ? { 'X-HTTP-Method-Override': method } : {}),
             Accept: 'application/json',
             'X-Requested-With': 'XMLHttpRequest',
             'X-XSRF-TOKEN': xsrf(),
