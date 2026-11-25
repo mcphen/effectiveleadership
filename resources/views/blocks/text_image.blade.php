@@ -24,7 +24,7 @@
                 <x-site.img :src="$d['image']" :alt="tr($d['title'] ?? null)" class="relative aspect-[4/3] w-full object-cover {{ $style === 'plain' ? '' : 'shadow-xl' }}" style="border-radius: calc(var(--radius) * 2)" />
             @else
                 <div class="elc-pattern-dark relative flex aspect-[4/3] items-center justify-center bg-brand/[0.06]" style="border-radius: calc(var(--radius) * 2)">
-                    <img src="{{ media_url(setting('identity.logo')) ?: asset('images/elc-logo.png') }}" alt="" class="w-3/5 opacity-90 mix-blend-multiply">
+                    <img src="{{ media_url(setting('identity.logo')) ?: asset('images/elc-logo-blue.png') }}" alt="" class="w-3/5 opacity-90 mix-blend-multiply">
                 </div>
             @endif
         </div>

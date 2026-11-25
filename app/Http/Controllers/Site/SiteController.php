@@ -12,17 +12,14 @@ use App\Models\SolutionCategory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class SiteController extends Controller
 {
-    /** « / » : redirige vers la langue préférée du visiteur. */
-    public function root(Request $request): RedirectResponse
+    /** « / » : redirige vers la langue principale du site (le sélecteur de langue propose les autres). */
+    public function root(): RedirectResponse
     {
-        $locale = $request->getPreferredLanguage(array_keys(locales())) ?? default_locale();
-
-        return redirect()->to(localized_url('', $locale));
+        return redirect()->to(localized_url('', default_locale()));
     }
 
     public function home(): View

@@ -20,11 +20,11 @@
     @endif
 
     <div class="container-elc py-20 md:py-28">
-        <div class="{{ $center ? 'mx-auto max-w-4xl text-center' : 'max-w-3xl' }}">
+        <div class="{{ $center ? 'mx-auto max-w-5xl text-center' : 'max-w-5xl' }}">
             @if (tr($d['eyebrow'] ?? null))
                 <p class="elc-eyebrow reveal {{ $center ? 'justify-center' : '' }}">{{ tr($d['eyebrow']) }}</p>
             @endif
-            <{{ $tag }} class="reveal font-heading text-4xl font-bold leading-[1.12] text-white sm:text-5xl lg:text-6xl">{{ tr($d['title'] ?? null) }}</{{ $tag }}>
+            <{{ $tag }} class="reveal font-heading text-[2rem] font-bold leading-[1.15] text-white sm:text-4xl md:text-5xl lg:text-[3.4rem]">{!! nl2br(e(tr($d['title'] ?? null))) !!}</{{ $tag }}>
             @if (tr($d['text'] ?? null))
                 <p class="reveal mt-6 text-lg leading-relaxed text-white/85 md:text-xl {{ $center ? 'mx-auto max-w-2xl' : 'max-w-2xl' }}">{!! nl2br(e(tr($d['text']))) !!}</p>
             @endif

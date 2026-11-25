@@ -3,6 +3,7 @@
 // Fixed interface texts of the public website (content is managed in the admin).
 return [
     'skip' => 'Skip to content',
+    'news' => 'News',
     'menu' => 'Menu',
     'close' => 'Close',
     'language' => 'Language',

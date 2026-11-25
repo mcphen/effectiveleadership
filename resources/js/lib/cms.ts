@@ -6,11 +6,22 @@ export const uid = (prefix = '') => prefix + Math.random().toString(36).slice(2,
 export const clone = <T>(value: T): T => JSON.parse(JSON.stringify(value ?? null));
 
 export function locales(): Record<string, string> {
-    return ((usePage().props as any).site?.locales as Record<string, string>) ?? { fr: 'Français', en: 'English' };
+    return ((usePage().props as any).site?.locales as Record<string, string>) ?? { en: 'English', fr: 'Français' };
 }
 
+/** Langue principale du site (la première de config/elc.php). */
 export function defaultLocale(): string {
-    return ((usePage().props as any).site?.defaultLocale as string) ?? 'fr';
+    return ((usePage().props as any).site?.defaultLocale as string) ?? 'en';
+}
+
+/** Langue de traduction (la langue secondaire du site). */
+export function translationLocale(): string {
+    return ((usePage().props as any).site?.translationLocale as string) ?? 'fr';
+}
+
+/** Nom d'une langue en français, pour les libellés de l'admin (« en anglais », « en français »). */
+export function localeName(code: string): string {
+    return ({ en: 'anglais', fr: 'français' } as Record<string, string>)[code] ?? code.toUpperCase();
 }
 
 /** Valeur vide d'un champ, en respectant la structure traduisible {fr, en}. */

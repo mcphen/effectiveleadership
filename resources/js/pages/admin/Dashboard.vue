@@ -3,6 +3,7 @@ import AdminIcon from '@/components/cms/AdminIcon.vue';
 import PageHeader from '@/components/cms/PageHeader.vue';
 import { Button } from '@/components/ui/button';
 import AppLayout from '@/layouts/AppLayout.vue';
+import { defaultLocale, localeName, translationLocale } from '@/lib/cms';
 import { Head, Link, usePage } from '@inertiajs/vue3';
 import { ArrowRight, ExternalLink, FilePlus2, Image, Inbox, Languages, Mail, Menu, Settings } from 'lucide-vue-next';
 import { computed } from 'vue';
@@ -89,8 +90,10 @@ const shortcuts = [
                     </section>
 
                     <section v-if="missingTranslations.length" class="rounded-xl border border-amber-500/30 bg-amber-500/5 p-5">
-                        <h2 class="mb-1 flex items-center gap-2 font-semibold"><Languages class="size-4 text-amber-600" /> À traduire en anglais</h2>
-                        <p class="mb-3 text-xs text-muted-foreground">Ces contenus s'affichent en français sur la version anglaise du site.</p>
+                        <h2 class="mb-1 flex items-center gap-2 font-semibold"><Languages class="size-4 text-amber-600" /> À traduire en {{ localeName(translationLocale()) }}</h2>
+                        <p class="mb-3 text-xs text-muted-foreground">
+                            Ces contenus s'affichent en {{ localeName(defaultLocale()) }} sur la version {{ localeName(translationLocale()) }}e du site.
+                        </p>
                         <ul class="space-y-1 text-sm">
                             <li v-for="m in missingTranslations" :key="`${m.resource}-${m.id}`">
                                 <Link :href="route('admin.resources.edit', [m.resource, m.id])" class="flex gap-2 rounded px-1 py-1 hover:bg-amber-500/10">

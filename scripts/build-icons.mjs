@@ -15,7 +15,7 @@ export const PICKABLE = [
 const UI = [
     'arrow-right', 'arrow-left', 'arrow-up-right', 'chevron-down', 'chevron-left', 'chevron-right', 'menu', 'x', 'mail',
     'phone', 'map-pin', 'linkedin', 'facebook', 'instagram', 'youtube', 'twitter', 'quote', 'plus', 'minus', 'download',
-    'calendar', 'check', 'file-text', 'send', 'clock', 'external-link', 'globe-2', 'paperclip', 'play',
+    'calendar', 'check', 'file-text', 'send', 'clock', 'external-link', 'globe-2', 'paperclip', 'play', 'megaphone',
 ];
 
 const toSvg = ([tag, attrs, children]) => {

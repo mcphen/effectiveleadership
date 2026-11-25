@@ -6,7 +6,7 @@ import SelectInput from '@/components/cms/fields/SelectInput.vue';
 import TextareaInput from '@/components/cms/fields/TextareaInput.vue';
 import ToggleInput from '@/components/cms/fields/ToggleInput.vue';
 import { useEditLocale } from '@/composables/useEditLocale';
-import { defaultLocale, emptyValue, stripHtml } from '@/lib/cms';
+import { defaultLocale, emptyValue, localeName, stripHtml } from '@/lib/cms';
 import type { Field } from '@/types/cms';
 import { Languages } from 'lucide-vue-next';
 import { computed, defineAsyncComponent } from 'vue';
@@ -18,7 +18,7 @@ const SeoInput = defineAsyncComponent(() => import('@/components/cms/fields/SeoI
 
 /**
  * Affiche un champ selon sa définition et modifie directement model[field.name].
- * Les champs traduisibles ({fr, en}) affichent la langue choisie dans les onglets FR / EN.
+ * Les champs traduisibles ({en, fr}) affichent la langue choisie dans les onglets EN / FR.
  */
 const props = defineProps<{
     field: Field;
@@ -127,7 +127,7 @@ const inputClass =
 
         <p v-if="reference && ['textarea', 'richtext'].includes(field.type)" class="flex items-start gap-1.5 rounded-md bg-amber-500/10 px-2 py-1.5 text-xs text-amber-800 dark:text-amber-300">
             <Languages class="mt-px size-3.5 shrink-0" />
-            <span class="line-clamp-2"><strong>À traduire</strong> — version française : « {{ reference }} »</span>
+            <span class="line-clamp-2"><strong>À traduire</strong> — version {{ localeName(defaultLocale()) }}e : « {{ reference }} »</span>
         </p>
         <p v-if="field.help" class="text-xs text-muted-foreground">{{ field.help }}</p>
         <p v-if="error" class="text-sm text-destructive">{{ error }}</p>

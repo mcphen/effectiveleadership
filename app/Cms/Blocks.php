@@ -50,7 +50,7 @@ class Blocks
                 'icon' => 'image',
                 'fields' => [
                     ['name' => 'eyebrow', 'type' => 'text', 'label' => 'Sur-titre', 't' => true],
-                    ['name' => 'title', 'type' => 'text', 'label' => 'Titre', 't' => true, 'required' => true],
+                    ['name' => 'title', 'type' => 'textarea', 'label' => 'Titre', 't' => true, 'required' => true, 'rows' => 3, 'help' => 'Chaque retour à la ligne est conservé sur le site.'],
                     ['name' => 'text', 'type' => 'textarea', 'label' => 'Texte', 't' => true, 'rows' => 3],
                     ['name' => 'image', 'type' => 'image', 'label' => 'Image de fond'],
                     ['name' => 'overlay', 'type' => 'range', 'label' => 'Assombrissement de l\'image', 'min' => 0, 'max' => 90, 'step' => 5, 'suffix' => '%', 'default' => 55, 'width' => 'half'],

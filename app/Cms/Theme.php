@@ -2,8 +2,6 @@
 
 namespace App\Cms;
 
-use App\Cms\SettingsSchema;
-
 /** Transforme les réglages « Couleurs & typographie » en variables CSS pour le site public. */
 class Theme
 {
@@ -12,7 +10,7 @@ class Theme
         $vars = [
             '--brand' => static::rgb(setting('theme.primary'), '#156080'),
             '--brand2' => static::rgb(setting('theme.secondary'), '#008080'),
-            '--ink' => static::rgb(setting('theme.dark'), '#0C2B3A'),
+            '--ink' => static::rgb(setting('theme.dark'), '#145773'),
             '--accent2' => static::rgb(setting('theme.accent'), '#C9973F'),
             '--radius' => ((int) (setting('theme.radius') ?? 4)).'px',
             '--font-heading' => "'".static::font('heading')."'",

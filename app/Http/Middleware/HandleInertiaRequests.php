@@ -2,6 +2,8 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\ContactMessage;
+use App\Models\JobApplication;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -53,10 +55,11 @@ class HandleInertiaRequests extends Middleware
                 'url' => localized_url('', default_locale()),
                 'locales' => locales(),
                 'defaultLocale' => default_locale(),
+                'translationLocale' => translation_locale(),
             ] : null,
             'counts' => fn () => $user ? [
-                'messages' => \App\Models\ContactMessage::query()->whereNull('read_at')->count(),
-                'applications' => \App\Models\JobApplication::query()->whereNull('read_at')->count(),
+                'messages' => ContactMessage::query()->whereNull('read_at')->count(),
+                'applications' => JobApplication::query()->whereNull('read_at')->count(),
             ] : null,
         ];
     }

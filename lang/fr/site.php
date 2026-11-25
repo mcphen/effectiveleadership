@@ -3,6 +3,7 @@
 // Textes fixes de l'interface du site public (le contenu, lui, se gère dans l'admin).
 return [
     'skip' => 'Aller au contenu',
+    'news' => 'Actualités',
     'menu' => 'Menu',
     'close' => 'Fermer',
     'language' => 'Langue',

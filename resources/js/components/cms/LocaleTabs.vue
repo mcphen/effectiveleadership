@@ -2,7 +2,7 @@
 import { locales } from '@/lib/cms';
 import { useEditLocale } from '@/composables/useEditLocale';
 
-/** Onglets « Français / English » : choisit la langue des champs traduisibles. */
+/** Onglets « English / Français » : choisit la langue des champs traduisibles. */
 defineProps<{ missing?: Record<string, number> }>();
 const locale = useEditLocale();
 const list = locales();

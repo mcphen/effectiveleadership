@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Cms\Blocks;
 use App\Cms\Fields;
 use App\Models\ClientReference;
 use App\Models\Media;
@@ -10,6 +11,7 @@ use App\Models\Page;
 use App\Models\Setting;
 use App\Models\Solution;
 use App\Models\SolutionCategory;
+use App\Support\Headline;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -38,12 +40,18 @@ class ContentSeeder extends Seeder
             $model::query()->delete();
         }
 
-        $logo = $this->media(__DIR__.'/content/brand/elc-logo.png', 'Effective Leadership Consulting');
+        // Ancien logo (sarcelle) remplacé par le logo bleu officiel : retiré de la médiathèque.
+        Media::query()->where('path', 'media/seed/elc-logo.png')->delete();
+        Storage::disk('public')->delete('media/seed/elc-logo.png');
+
+        $logo = $this->media(__DIR__.'/content/brand/elc-logo-blue.png', 'Effective Leadership Consulting');
         $this->settings($logo);
         $this->solutions();
         $this->references();
         $this->pages();
+        $this->headlines();
         $this->menus();
+        $this->news();
     }
 
     // ───────────────────────── Réglages ─────────────────────────
@@ -54,7 +62,7 @@ class ContentSeeder extends Seeder
 
         Setting::put('identity', [
             'site_name' => 'Effective Leadership Consulting',
-            'tagline' => $this->t('Nous aidons à développer des leaders efficaces en Afrique', 'We Help Develop Effective Leaders in Africa'),
+            'tagline' => $this->c['home']['tagline'],
             'logo' => $logo,
             'logo_light' => null,
             'favicon' => null,
@@ -62,7 +70,7 @@ class ContentSeeder extends Seeder
         ]);
 
         Setting::put('theme', [
-            'primary' => '#156080', 'secondary' => '#008080', 'dark' => '#0C2B3A', 'accent' => '#C9973F',
+            'primary' => '#156080', 'secondary' => '#008080', 'dark' => '#145773', 'accent' => '#C9973F',
             'heading_font' => 'Merriweather', 'body_font' => 'Source Sans 3', 'radius' => '4',
         ]);
 
@@ -241,7 +249,9 @@ class ContentSeeder extends Seeder
         $this->page('accueil', $this->t('Accueil', 'Home'), [
             $this->block('hero', [
                 'eyebrow' => $this->t('Effective Leadership Consulting', 'Effective Leadership Consulting'),
-                'title' => $home['tagline'],
+                // Une signature par ligne : « Developing Leaders. » / « Transforming Organizations. » / « Creating Impact. »
+                'title' => collect($home['tagline'])->map(fn ($t) => str_replace('. ', '.
+', $t))->all(),
                 'text' => $home['intro'],
                 'height' => 'large',
                 'buttons' => [
@@ -263,7 +273,7 @@ class ContentSeeder extends Seeder
             ], ['background' => 'light']),
             $this->block('text_image', [
                 'eyebrow' => $this->t('Qui sommes-nous', 'Who we are'),
-                'title' => $this->t('Un cabinet de conseil en leadership et management', 'A leadership and management consulting firm'),
+                'title' => $this->t('Un Cabinet de Conseil en Leadership et Management', 'A Leadership and Management Consulting Firm'),
                 'content' => $sections['qui-sommes-nous']['html'] ?? $this->t('', ''),
                 'image_position' => 'right',
                 'buttons' => [['label' => $this->t('En savoir plus sur ELC', 'More about ELC'), 'url' => 'page:{qui-sommes-nous}', 'style' => 'primary']],
@@ -306,7 +316,7 @@ class ContentSeeder extends Seeder
 
         // Qui sommes-nous
         $values = collect($about['values'])->map(fn ($v, $i) => [
-            'icon' => ['shield-check', 'sprout', 'heart-handshake', 'globe', 'users', 'award'][$i] ?? 'star',
+            'icon' => ['shield-check', 'sprout', 'heart-handshake', 'globe', 'users', 'lightbulb', 'award'][$i] ?? 'star',
             'title' => $v['title'],
             'text' => $v['text'] ?? $this->t('', ''),
         ])->all();
@@ -527,6 +537,59 @@ class ContentSeeder extends Seeder
         Menu::query()->create(['location' => 'footer_legal', 'name' => Menu::LOCATIONS['footer_legal'], 'items' => []]);
     }
 
+    // ───────────────────────── Grands titres ─────────────────────────
+
+    /** Majuscule à chaque mot important des grands titres (demande du client) : pages, blocs, offres. */
+    protected function headlines(): void
+    {
+        foreach (Page::query()->get() as $page) {
+            $page->title = Headline::translations($page->getTranslations('title'));
+            $page->blocks = collect($page->blocks)->map(function (array $block) {
+                if (isset($block['data']['title'])) {
+                    $block['data']['title'] = Headline::translations($block['data']['title']);
+                }
+                if ($block['type'] === 'cards') {
+                    $block['data']['items'] = collect($block['data']['items'] ?? [])
+                        ->map(fn ($item) => [...$item, 'title' => Headline::translations($item['title'] ?? null)])->all();
+                }
+
+                return $block;
+            })->all();
+            $page->save();
+        }
+
+        foreach ([SolutionCategory::query()->get(), Solution::query()->get()] as $models) {
+            foreach ($models as $model) {
+                $model->title = Headline::translations($model->getTranslations('title'));
+                $model->save();
+            }
+        }
+    }
+
+    // ───────────────────────── Fil d'actualité ─────────────────────────
+
+    /**
+     * Premières informations du fil : les offres signature du cabinet (contenu existant du site).
+     * Le client les remplace par ses actualités depuis Réglages → Fil d'actualité.
+     */
+    protected function news(): void
+    {
+        Setting::put('news', [
+            'enabled' => true,
+            'label' => $this->t('Actualités', 'News'),
+            'posts' => true,
+            'items' => Solution::query()->published()->where('is_featured', true)->ordered()->limit(4)->get()
+                ->map(fn (Solution $s) => [
+                    '_id' => Str::random(8),
+                    'text' => $this->t(
+                        'Découvrez notre offre signature : '.$s->getTranslation('title', 'fr'),
+                        'Discover our signature offering: '.$s->getTranslation('title', 'en')
+                    ),
+                    'link' => 'solution:'.$s->id,
+                ])->all(),
+        ]);
+    }
+
     // ───────────────────────── Outils ─────────────────────────
 
     protected function page(string $key, array $title, array $blocks, bool $isHome = false, string $status = 'published'): Page
@@ -546,12 +609,12 @@ class ContentSeeder extends Seeder
 
     protected function block(string $type, array $data, array $settings = []): array
     {
-        return ['type' => $type, 'data' => $data, 'settings' => $settings + (\App\Cms\Blocks::all()[$type]['settings'] ?? [])];
+        return ['type' => $type, 'data' => $data, 'settings' => $settings + (Blocks::all()[$type]['settings'] ?? [])];
     }
 
     protected function t(string $fr, string $en): array
     {
-        return ['fr' => $fr, 'en' => $en];
+        return ['en' => $en, 'fr' => $fr];
     }
 
     /** @return array<string, string> */

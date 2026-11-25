@@ -3,6 +3,7 @@
 namespace App\Cms\Resources;
 
 use App\Models\Testimonial;
+use Illuminate\Database\Eloquent\Model;
 
 class TestimonialResource extends Resource
 {
@@ -40,8 +41,8 @@ class TestimonialResource extends Resource
         ];
     }
 
-    public static function toRow(\Illuminate\Database\Eloquent\Model $model): array
+    public static function toRow(Model $model): array
     {
-        return [...parent::toRow($model), '_missing_en' => blank($model->getTranslations('quote')['en'] ?? null)];
+        return [...parent::toRow($model), '_missing_translation' => blank($model->getTranslations('quote')[translation_locale()] ?? null)];
     }
 }

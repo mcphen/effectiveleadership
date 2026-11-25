@@ -4,6 +4,7 @@ import SelectInput from '@/components/cms/fields/SelectInput.vue';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import AppLayout from '@/layouts/AppLayout.vue';
+import { localeName, translationLocale } from '@/lib/cms';
 import type { ResourceMeta } from '@/types/cms';
 import { Head, Link, router } from '@inertiajs/vue3';
 import { Check, Copy, ExternalLink, GripVertical, Home, Languages, MoreHorizontal, Pencil, Plus, Search, Trash2 } from 'lucide-vue-next';
@@ -117,11 +118,11 @@ const imageUrl = (v: string | null) => (!v ? null : /^(https?:)?\/\//.test(v) ||
                                             <Link :href="editUrl(row)" class="font-medium hover:text-primary hover:underline">{{ row[col.name] || '(sans titre)' }}</Link>
                                             <Home v-if="row.is_home" class="ml-1.5 inline size-3.5 text-primary" />
                                             <span
-                                                v-if="row._missing_en"
+                                                v-if="row._missing_translation"
                                                 class="ml-2 inline-flex items-center gap-1 rounded bg-amber-500/15 px-1.5 py-px align-middle text-[10px] font-semibold text-amber-700 dark:text-amber-400"
-                                                title="Traduction anglaise manquante"
+                                                :title="`Traduction en ${localeName(translationLocale())} manquante`"
                                             >
-                                                <Languages class="size-3" /> EN
+                                                <Languages class="size-3" /> {{ translationLocale().toUpperCase() }}
                                             </span>
                                         </template>
                                         <div v-else-if="col.type === 'image'" class="flex size-10 items-center justify-center overflow-hidden rounded-md border bg-muted/40">

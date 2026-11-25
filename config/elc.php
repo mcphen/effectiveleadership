@@ -2,12 +2,12 @@
 
 return [
     /*
-    | Langues du site. La première est la langue par défaut (et de repli :
-    | un texte non traduit en anglais s'affiche en français).
+    | Langues du site. La première est la langue principale (et de repli :
+    | un texte non traduit en français s'affiche en anglais).
     */
     'locales' => [
-        'fr' => 'Français',
         'en' => 'English',
+        'fr' => 'Français',
     ],
 
     /*

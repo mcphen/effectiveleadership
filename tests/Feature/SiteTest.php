@@ -6,6 +6,7 @@ use App\Models\NewsletterSubscriber;
 use App\Models\Page;
 use App\Models\Solution;
 use App\Models\SolutionCategory;
+use App\Models\User;
 use Database\Seeders\ContentSeeder;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
@@ -15,9 +16,36 @@ beforeEach(function () {
     $this->seed(ContentSeeder::class);
 });
 
-test('la racine redirige vers la langue du navigateur', function () {
+test('la racine redirige vers l\'anglais, langue principale du site', function () {
     $this->get('/', ['Accept-Language' => 'en-GB,en;q=0.9'])->assertRedirect('/en');
-    $this->get('/', ['Accept-Language' => 'fr-FR'])->assertRedirect('/fr');
+    $this->get('/', ['Accept-Language' => 'fr-FR'])->assertRedirect('/en');
+});
+
+test('un texte non traduit en français s\'affiche en anglais', function () {
+    Page::query()->create(['title' => ['en' => 'English only'], 'slug' => ['en' => 'english-only'], 'status' => 'published', 'blocks' => []]);
+
+    $this->get('/fr/english-only')->assertOk()->assertSee('English only');
+});
+
+test('les corrections du client sont en place', function () {
+    $home = $this->get('/en')->assertOk();
+    $home->assertSee('Developing Leaders.<br />', false)
+        ->assertSee('Transforming Organizations.<br />', false)
+        ->assertSee('A Leadership and Management Consulting Firm')
+        ->assertSee('Discover our signature offering')
+        ->assertDontSee('We Help Develop Effective Leaders in Africa');
+    $this->get('/fr')->assertSee('Un Cabinet de Conseil en Leadership et Management');
+
+    $about = Page::query()->get()->first(fn ($p) => $p->slugFor('fr') === 'qui-sommes-nous');
+    $this->get($about->url('en'))->assertOk()
+        ->assertSee('Higher Education:', false)
+        ->assertDontSee('Teaching:', false)
+        ->assertSeeInOrder(['Collaboration', 'Innovation', 'Excellence'])
+        ->assertSeeInOrder(['Madeleine Samané MARONE', 'Education (Alma Mater):', 'Master’s in Sociology, UCAD', 'Master’s in Human Resource Management, UCAO'], false);
+    $this->get($about->url('fr'))->assertOk()
+        ->assertSee('Enseignement supérieur :', false)
+        ->assertSee('Office Manager / Consultante Junior')
+        ->assertSee('Formation (Alma Mater) :', false);
 });
 
 test('toutes les pages publiées s\'affichent dans les deux langues', function () {
@@ -51,7 +79,7 @@ test('un brouillon est invisible pour les visiteurs mais visible en aperçu', fu
 
     $this->get($path)->assertNotFound();
 
-    $this->actingAs(\App\Models\User::factory()->create(['role' => 'admin']))
+    $this->actingAs(User::factory()->create(['role' => 'admin']))
         ->get($path)->assertOk()->assertSee('noindex', false);
 });
 

@@ -2,6 +2,7 @@
 
 use App\Cms\Html;
 use App\Cms\Resources\Registry;
+use App\Cms\Theme;
 use App\Models\Page;
 use App\Models\User;
 use Illuminate\Support\Facades\Storage;
@@ -69,16 +70,16 @@ test('créer une page avec des blocs génère les slugs et nettoie le contenu', 
 test('deux pages ne peuvent pas avoir le même slug', function () {
     $this->actingAs($this->editor);
     foreach ([1, 2] as $i) {
-        $this->post('/admin/content/pages', ['title' => ['fr' => 'Doublon', 'en' => ''], 'status' => 'published']);
+        $this->post('/admin/content/pages', ['title' => ['en' => 'Duplicate', 'fr' => ''], 'status' => 'published']);
     }
 
-    expect(Page::query()->orderBy('id')->get()->map(fn ($p) => $p->slugFor('fr'))->all())->toBe(['doublon', 'doublon-2']);
+    expect(Page::query()->orderBy('id')->get()->map(fn ($p) => $p->slugFor('en'))->all())->toBe(['duplicate', 'duplicate-2']);
 });
 
-test('le titre français est obligatoire', function () {
+test('le titre anglais (langue principale) est obligatoire', function () {
     $this->actingAs($this->editor)
-        ->post('/admin/content/pages', ['title' => ['fr' => '', 'en' => 'Only English']])
-        ->assertSessionHasErrors('title.fr');
+        ->post('/admin/content/pages', ['title' => ['en' => '', 'fr' => 'Seulement en français']])
+        ->assertSessionHasErrors('title.en');
 });
 
 test('dupliquer crée une copie non publiée', function () {
@@ -101,7 +102,10 @@ test('les réglages sont enregistrés et appliqués au site', function () {
     ])->assertRedirect();
 
     expect(setting('theme.primary'))->toBe('#AA0000')
-        ->and(\App\Cms\Theme::cssVariables())->toContain('--brand: 170 0 0')->toContain("'Lora'");
+        ->and(Theme::cssVariables())->toContain('--brand: 170 0 0')->toContain("'Lora'");
+
+    // Les couleurs des réglages sont déclarées après la feuille de style, sinon ses valeurs par défaut l'emportent.
+    $this->get('/en')->assertSeeInOrder(['/build/assets/site-', '--brand: 170 0 0'], false);
 });
 
 test('le nettoyeur HTML retire les attributs et liens dangereux', function () {
@@ -114,7 +118,7 @@ test('les requêtes PUT et DELETE passent en POST avec _method (pare-feu Sucuri)
     $page = Page::query()->create(['title' => ['fr' => 'À supprimer'], 'slug' => ['fr' => 'a-supprimer'], 'status' => 'published', 'blocks' => []]);
 
     $this->postJson("/admin/content/pages/{$page->id}", [
-        '_method' => 'PUT', 'title' => ['fr' => 'Renommée', 'en' => ''], 'status' => 'published',
+        '_method' => 'PUT', 'title' => ['en' => 'Renamed', 'fr' => 'Renommée'], 'status' => 'published',
     ], ['X-Inertia' => 'true'])->assertRedirect();
     expect($page->fresh()->getTranslation('title', 'fr'))->toBe('Renommée');
 

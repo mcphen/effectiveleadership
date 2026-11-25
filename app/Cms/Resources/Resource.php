@@ -197,9 +197,9 @@ abstract class Resource
             $row[$name] = $raw instanceof \DateTimeInterface ? $raw->format('d/m/Y') : $raw;
         }
 
-        // Indique les traductions anglaises manquantes.
+        // Indique les traductions manquantes dans la langue secondaire.
         if (method_exists($model, 'isTranslatableAttribute') && $model->isTranslatableAttribute(static::$titleField)) {
-            $row['_missing_en'] = blank($model->getTranslations(static::$titleField)['en'] ?? null);
+            $row['_missing_translation'] = blank($model->getTranslations(static::$titleField)[translation_locale()] ?? null);
         }
 
         return $row;

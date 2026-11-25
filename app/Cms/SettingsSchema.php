@@ -46,7 +46,7 @@ class SettingsSchema
                 'fields' => [
                     ['name' => 'primary', 'type' => 'color', 'label' => 'Couleur principale', 'default' => '#156080', 'width' => 'half'],
                     ['name' => 'secondary', 'type' => 'color', 'label' => 'Couleur secondaire', 'default' => '#008080', 'width' => 'half'],
-                    ['name' => 'dark', 'type' => 'color', 'label' => 'Couleur foncée (fonds sombres)', 'default' => '#0C2B3A', 'width' => 'half'],
+                    ['name' => 'dark', 'type' => 'color', 'label' => 'Couleur foncée (fonds sombres)', 'default' => '#145773', 'width' => 'half'],
                     ['name' => 'accent', 'type' => 'color', 'label' => 'Couleur d\'accent (détails)', 'default' => '#C9973F', 'width' => 'half'],
                     ['name' => 'heading_font', 'type' => 'select', 'label' => 'Police des titres', 'options' => self::HEADING_FONTS, 'default' => 'Merriweather', 'width' => 'half'],
                     ['name' => 'body_font', 'type' => 'select', 'label' => 'Police du texte', 'options' => self::BODY_FONTS, 'default' => 'Source Sans 3', 'width' => 'half'],
@@ -60,6 +60,19 @@ class SettingsSchema
                     ['name' => 'cta_label', 'type' => 'text', 'label' => 'Bouton de l\'en-tête – texte', 't' => true, 'width' => 'half'],
                     ['name' => 'cta_link', 'type' => 'link', 'label' => 'Bouton de l\'en-tête – lien', 'width' => 'half'],
                     ['name' => 'topbar', 'type' => 'toggle', 'label' => 'Afficher la barre de contact au-dessus du menu', 'default' => true],
+                ],
+            ],
+            'news' => [
+                'label' => 'Fil d\'actualité',
+                'icon' => 'megaphone',
+                'fields' => [
+                    ['name' => 'enabled', 'type' => 'toggle', 'label' => 'Afficher le fil d\'actualité défilant sous le menu', 'default' => true],
+                    ['name' => 'label', 'type' => 'text', 'label' => 'Titre du bandeau', 't' => true, 'width' => 'half', 'default' => ['en' => 'News', 'fr' => 'Actualités']],
+                    ['name' => 'posts', 'type' => 'toggle', 'label' => 'Ajouter automatiquement les 3 dernières publications (Insights)', 'default' => true, 'width' => 'half'],
+                    ['name' => 'items', 'type' => 'repeater', 'label' => 'Informations à faire défiler', 'item_label' => 'text', 'help' => 'Une information par ligne, avec un lien facultatif. Les plus récentes en premier.', 'fields' => [
+                        ['name' => 'text', 'type' => 'text', 'label' => 'Information', 't' => true, 'required' => true],
+                        ['name' => 'link', 'type' => 'link', 'label' => 'Lien (facultatif)'],
+                    ]],
                 ],
             ],
             'contact' => [

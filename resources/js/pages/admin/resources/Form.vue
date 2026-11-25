@@ -38,7 +38,7 @@ const title = computed(() => {
     return isNew.value ? (props.resource.feminine ? 'Nouvelle ' : 'Nouveau ') + props.resource.singular : '(sans titre)';
 });
 
-/** Nombre de textes français sans traduction, par langue (indicateur sur les onglets). */
+/** Nombre de textes de la langue principale sans traduction, par langue (indicateur sur les onglets). */
 const missing = computed(() => {
     const out: Record<string, number> = {};
     const count = (fields: Field[], data: Record<string, any>, l: string): number => {

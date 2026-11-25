@@ -1,6 +1,6 @@
 @php
     $siteName = setting('identity.site_name') ?: config('app.name');
-    $logo = media_url(setting('identity.logo')) ?: asset('images/elc-logo.png');
+    $logo = media_url(setting('identity.logo')) ?: asset('images/elc-logo-blue.png');
     $logoLight = media_url(setting('identity.logo_light'));
     $logoHeight = (int) (setting('identity.logo_height') ?? 52);
     $favicon = media_url(setting('identity.favicon'));
@@ -45,8 +45,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="{{ \App\Cms\Theme::fontsUrl() }}">
-    <style>:root { {!! \App\Cms\Theme::cssVariables() !!} }</style>
     @vite(['resources/css/site.css', 'resources/js/site.ts'])
+    {{-- Après la feuille de style : les couleurs et polices des Réglages remplacent les valeurs par défaut de site.css. --}}
+    <style>:root { {!! \App\Cms\Theme::cssVariables() !!} }</style>
 
     @if ($analytics && preg_match('/^G-[A-Z0-9]+$/', $analytics) && empty($meta['noindex']))
         <script async src="https://www.googletagmanager.com/gtag/js?id={{ $analytics }}"></script>
@@ -191,6 +192,8 @@
             </div>
         </div>
     </header>
+
+    @include('site.partials.news-ticker')
 
     <main id="main" class="flex-1">
         @yield('content')

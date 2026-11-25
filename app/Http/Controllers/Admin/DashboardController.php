@@ -19,17 +19,18 @@ class DashboardController extends Controller
 {
     public function __invoke(): Response
     {
-        $fr = default_locale();
+        $main = default_locale();
+        $other = translation_locale();
 
-        // Contenus dont la traduction anglaise du titre manque.
+        // Contenus dont la traduction du titre manque dans la langue secondaire.
         $missing = collect([
             ['pages', 'Page', Page::query()->get()],
             ['solutions', 'Offre', Solution::query()->get()],
             ['posts', 'Publication', Post::query()->get()],
             ['case-studies', 'Réalisation', CaseStudy::query()->get()],
         ])->flatMap(fn ($set) => $set[2]
-            ->filter(fn ($m) => blank($m->getTranslations('title')['en'] ?? null))
-            ->map(fn ($m) => ['resource' => $set[0], 'type' => $set[1], 'id' => $m->id, 'title' => $m->getTranslation('title', $fr)]))
+            ->filter(fn ($m) => blank($m->getTranslations('title')[$other] ?? null))
+            ->map(fn ($m) => ['resource' => $set[0], 'type' => $set[1], 'id' => $m->id, 'title' => $m->getTranslation('title', $main)]))
             ->take(8)->values();
 
         return Inertia::render('admin/Dashboard', [

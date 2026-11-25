@@ -4,7 +4,7 @@ import FieldsForm from '@/components/cms/FieldsForm.vue';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { useEditLocale } from '@/composables/useEditLocale';
-import { clone, newBlock, stripHtml, tr, uid, withDefaults } from '@/lib/cms';
+import { clone, defaultLocale, newBlock, stripHtml, tr, uid, withDefaults } from '@/lib/cms';
 import type { Block, BlockDefinition, Field } from '@/types/cms';
 import {
     ArrowDown, ArrowUp, ChevronDown, ChevronsDownUp, ChevronsUpDown, Copy, Eye, EyeOff, GripVertical, Languages, LayoutTemplate,
@@ -120,13 +120,14 @@ function preview(block: Block): string {
     return '';
 }
 
-/** Nombre de champs remplis en français mais vides dans la langue éditée. */
+/** Nombre de champs remplis dans la langue principale mais vides dans la langue éditée. */
 function missing(fields: Field[], data: Record<string, any>): number {
-    if (locale.value === 'fr') return 0;
+    const main = defaultLocale();
+    if (locale.value === main) return 0;
     let count = 0;
     for (const f of fields) {
         const v = data?.[f.name];
-        if (f.t && v && typeof v === 'object' && stripHtml(v.fr ?? '') && !stripHtml(v[locale.value] ?? '')) count++;
+        if (f.t && v && typeof v === 'object' && stripHtml(v[main] ?? '') && !stripHtml(v[locale.value] ?? '')) count++;
         if (f.type === 'repeater' && Array.isArray(v)) v.forEach((item) => (count += missing(f.fields ?? [], item)));
     }
     return count;

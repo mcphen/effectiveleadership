@@ -10,7 +10,7 @@
     :root {
         --brand: 21 96 128;
         --brand2: 0 128 128;
-        --ink: 12 43 58;
+        --ink: 20 87 115;
         --accent2: 201 151 63;
         --radius: 4px;
         --font-heading: 'Merriweather';
@@ -240,5 +240,22 @@
     }
     .animate-marquee:hover {
         animation-play-state: paused;
+    }
+
+    /* Fil d'actualité : défilement continu, pause au survol ou au clavier */
+    .news-ticker__track {
+        animation: elc-marquee var(--ticker-duration, 40s) linear infinite;
+    }
+    .news-ticker:hover .news-ticker__track,
+    .news-ticker:focus-within .news-ticker__track {
+        animation-play-state: paused;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .news-ticker__track {
+            animation: none;
+        }
+        .news-ticker__viewport {
+            overflow-x: auto;
+        }
     }
 }

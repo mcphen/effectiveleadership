@@ -1,6 +1,12 @@
 <?php
 
+use App\Models\CaseStudy;
+use App\Models\JobOffer;
+use App\Models\Page;
+use App\Models\Post;
 use App\Models\Setting;
+use App\Models\Solution;
+use App\Models\SolutionCategory;
 use Illuminate\Support\Str;
 
 if (! function_exists('locales')) {
@@ -15,6 +21,14 @@ if (! function_exists('default_locale')) {
     function default_locale(): string
     {
         return array_key_first(config('elc.locales'));
+    }
+}
+
+if (! function_exists('translation_locale')) {
+    /** Langue de traduction : la première langue autre que la langue principale. */
+    function translation_locale(): string
+    {
+        return collect(array_keys(config('elc.locales')))->first(fn ($l) => $l !== default_locale()) ?? default_locale();
     }
 }
 
@@ -105,12 +119,12 @@ if (! function_exists('resolve_link')) {
 
         if (preg_match('/^(page|solution|category|case|post|job):(\d+)$/', $link, $m)) {
             $model = match ($m[1]) {
-                'page' => \App\Models\Page::find($m[2]),
-                'solution' => \App\Models\Solution::find($m[2]),
-                'category' => \App\Models\SolutionCategory::find($m[2]),
-                'case' => \App\Models\CaseStudy::find($m[2]),
-                'post' => \App\Models\Post::find($m[2]),
-                'job' => \App\Models\JobOffer::find($m[2]),
+                'page' => Page::find($m[2]),
+                'solution' => Solution::find($m[2]),
+                'category' => SolutionCategory::find($m[2]),
+                'case' => CaseStudy::find($m[2]),
+                'post' => Post::find($m[2]),
+                'job' => JobOffer::find($m[2]),
             };
 
             return $model?->url($locale) ?? '#';
